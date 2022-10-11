@@ -1,0 +1,1688 @@
+@media only screen and (max-width: 480px) {
+
+    /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+    /*============= START COMMON SECTIONS TO ALL PAGES ===============*/
+    /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+    .my_container {
+        width: 100%;
+    }
+
+    /*start style navbar*/
+    .navbar-light .navbar-toggler {
+        position: absolute;
+        left: 10px;
+        padding: 7px;
+        color: #000 !important;
+        border: none !important;
+        outline: none;
+        z-index: 11;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: none;
+        line-height: 1.5;
+    }
+
+    .navbar-toggler-icon i {
+        font-size: 33px;
+        vertical-align: middle;
+
+    }
+
+    .navbar-toggler-icon i.la-times {
+        color: #fff;
+    }
+
+    .navbar-toggler-icon i.icofont-close {
+        font-size: 33px;
+        font-weight: bold;
+    }
+
+    .main_navbar .navbar-collapse {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 8;
+        overflow: hidden;
+        text-align: justify;
+    }
+
+    .main_navbar .navbar-collapse img {
+        position: absolute;
+        top: 73vh;
+        width: 60%;
+        left: 19vw;
+        display: block !important;
+    }
+
+    .top_page_content .main_navbar ul.links_list {
+        position: relative;
+        background-color: lightseagreen;
+        height: 100vh;
+    }
+
+    .top_page_content .main_navbar ul.links_list li {
+        top: 33vmax;
+        left: 20vw;
+        line-height: 1;
+    }
+
+    .top_page_content .main_navbar ul.links_list li::before {
+        display: none;
+    }
+
+    .top_page_content .main_navbar ul.links_list li img {
+        display: block;
+        position: absolute;
+        width: 4vw;
+        top: 5vw;
+        left: -6vw;
+    }
+
+    .top_page_content .main_navbar ul.links_list li a {
+        font-size: 9vw;
+        color: #fff
+    }
+
+    .top_page_content .main_navbar ul.links_list li a.active_link::after {
+        display: none;
+    }
+
+    .top_page_content .main_navbar ul.links_list li a:hover::after {
+        width: 0;
+    }
+
+    /*end style navbar*/
+
+    /*start sidenav*/
+
+    .top_page_content .sidenav {
+        padding: 25px 35px 0 35px;
+        width: 100%;
+    }
+
+    .top_page_content .sidenav_overlay {
+        display: none
+    }
+
+    .top_page_content .sidenav .user_purchases h3 {
+        font-size: 6vmin;
+        margin-bottom: 0;
+    }
+
+    .top_page_content .sidenav .user_purchases .user_cart span.closebtn {
+        font-size: 8vw;
+        cursor: pointer;
+    }
+
+    .top_page_content .sidenav .user_purchases .purchases_content .purchases_content_right .top_content {
+        padding-bottom: 19px;
+    }
+
+    .top_page_content .sidenav .user_purchases .purchases_content .purchases_content_right .top_content p {
+        margin-top: 5px;
+    }
+
+    .top_page_content .sidenav .user_purchases .purchases_content .purchases_content_right .top_content h6,
+    .top_page_content .sidenav .user_purchases .purchases_content .purchases_content_right .top_content h5 {
+        margin-top: 5px;
+    }
+
+    .top_page_content .sidenav .user_purchases .purchases_content .purchases_content_right .top_content h6 {
+        margin-top: 15px;
+    }
+
+    .top_page_content .sidenav .user_purchases .subtotal {
+        margin-bottom: 0 !important;
+    }
+
+    .top_page_content .sidenav .user_purchases .subtotal h5 {
+        font-size: 5vmin;
+    }
+
+    .top_page_content .sidenav .user_purchases .subtotal .subtotal_content h3 {
+        font-size: 5vmin;
+    }
+
+    .top_page_content .sidenav .user_purchases .subtotal .subtotal_content a {
+        font-size: 3vmin;
+    }
+
+    .top_page_content .sidenav .user_purchases .purchases_content::-webkit-scrollbar {
+        width: 5px !important
+    }
+
+    .top_page_content .sidenav .user_purchases .purchases_content {
+        height: 350px;
+    }
+
+    .top_page_content .main_navbar {
+        justify-content: left;
+        padding: 50px 0;
+        margin-top: 0 !important;
+    }
+
+    .top_page_content .main_navbar nav {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+
+    /*end sidenav*/
+
+    .top_page_content .main_navbar .slinkIcon ul.smLinks li:first-child {
+        display: none;
+    }
+
+    .top_page_content .main_navbar ul.links_list::before {
+        display: none;
+    }
+
+    .top_page_content .main_navbar .slinkIcon {
+        position: absolute;
+        left: 20%;
+        top: 7%;
+    }
+
+    .row.chang_flex {
+        flex-direction: column-reverse;
+    }
+
+    .top_page_content .logo_section {
+        padding: 0;
+    }
+
+    .top_page_content .logo_section .logoSection_left {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .top_page_content .logo_section .logoSection_left img {
+        width: 29vmax;
+    }
+
+    .top_page_content .logo_section .logoSection_left h5 {
+        margin-left: 0 !important;
+        font-size: 4vmin;
+        margin-top: 10px;
+    }
+
+    .top_page_content .logo_section .logoSection_left a {
+        margin-right: 15px;
+    }
+
+    .logo_section .logoSection_right {
+        position: absolute;
+        top: -172px;
+        right: 35px;
+    }
+
+    .logo_section .logoSection_right ul li {
+        margin-right: 11px !important;
+    }
+
+    .logo_section .logoSection_right ul li img {
+        width: 30px !important;
+    }
+
+    .logo_section .logoSection_right ul li span {
+        font-size: 12px !important;
+    }
+
+    .top_page_content .logo_section .logoSection_right ul li span.my_badge {
+        top: 18px;
+        right: -5px;
+    }
+
+    .top_page_content .logo_section .logoSection_right ul li.first ul.dropdown-menu {
+        transform: translate(-43%, 26%) !important;
+        width: 200px;
+        padding: 12px;
+        top: -8px !important;
+    }
+
+    .home_main_content .heading {
+        margin: 15px 0;
+        padding-left: 15px;
+    }
+
+    .home_main_content .heading img {
+        width: 8vw;
+    }
+
+    .home_main_content .heading h5 {
+        font-size: 4vw;
+        margin-left: 2vw !important;
+    }
+
+    /* ==================================== */
+    /*style search section */
+    .home_main_content .search_section {
+        margin-top: 0 !important;
+    }
+
+    .home_main_content .search_section .search_section_left {
+        margin: 25px 0;
+    }
+
+    .home_main_content .search_section .search_section_left h3 {
+        font-size: 5vw;
+        margin-left: 2vw !important;
+    }
+
+    .home_main_content .search_section .search_section_left img {
+        width: 7vw !important;
+    }
+
+    .home_main_content .search_section .search_section_right {
+        background-color: #fff;
+        padding: 14px 0;
+        margin-top: 0;
+    }
+
+    .home_main_content .search_section .search_section_right .form-group {
+        padding: 0 18px;
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .home_main_content .search_section .search_section_right label {
+        font-size: 15px !important;
+        margin-bottom: 3px !important;
+    }
+
+    .home_main_content .search_section .search_section_right input {
+        width: 92%;
+        background-color: #E9E9E9;
+        padding: 2vw 0 2vw 4vw;
+        font-size: 17px;
+        margin-left: 0;
+        position: relative;
+    }
+
+    .home_main_content .search_section .search_section_right input::placeholder {
+        font-size: 3.5vw;
+        font-weight: lighter;
+    }
+
+    .home_main_content .search_section .search_section_right input+span {
+        position: absolute;
+        right: 18px;
+    }
+
+    .home_main_content .search_section .search_section_right input+span button {
+        padding: 1vw 2vw;
+    }
+
+    .home_main_content .search_section .search_section_right input+span button i {
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    /*end search section */
+    /* ==================================== */
+
+    /* style our_catalogs*/
+    .home_main_content .our_catalogs {
+        height: auto !important;
+        padding-bottom: 20px;
+    }
+
+    .home_main_content .our_catalogs .row .col-md-4 {
+        padding: 20px 20px 0 20px !important;
+    }
+
+    .home_main_content .our_catalogs::before {
+        display: none;
+    }
+
+    .home_main_content .our_catalogs .catalog {
+        height: 50vmin;
+        width: 100%;
+    }
+
+    .home_main_content .our_catalogs .catalog .catalog_content {
+        padding: 2vw 3vw;
+    }
+
+    .home_main_content .our_catalogs .catalog .catalog_content h4 {
+
+        font-size: 4vw;
+    }
+
+    .home_main_content .our_catalogs .catalog .catalog_content span {
+        width: 8vw;
+        height: 8vw;
+        line-height: 7vw;
+    }
+
+    .home_main_content .our_catalogs .catalog .catalog_content span i {
+        font-size: 7vmin;
+        vertical-align: middle;
+    }
+
+    .home_main_content .our_catalogs .catalog.active_catalog h4 {
+        margin-bottom: 7px !important;
+    }
+
+    .home_main_content .our_catalogs .catalog:hover .catalog_content {
+        padding: 4vw 2vw;
+    }
+
+    /* end style our_catalogs*/
+
+    /*style footer*/
+    footer {
+        margin-bottom: 7vw;
+        margin-top: 7vw;
+    }
+
+    footer .our_policy {
+        height: auto;
+    }
+
+    footer .our_policy .policy {
+        width: 70%;
+        margin: 5vw auto;
+    }
+
+    footer .our_policy .policy::after {
+        width: 100px;
+        height: 2px;
+        background-color: #888;
+        top: 116%;
+        left: calc((100% - 100px)/2);
+    }
+
+    footer .our_policy .policy h6 {
+        font-size: 4vw;
+    }
+
+    footer .our_policy .policy p {
+        font-size: 3.5vw;
+        width: 95%;
+    }
+
+    footer .our_policy .policy img {
+        width: 8vw;
+    }
+
+    footer .our_policy img.red_img_behind,
+    footer .our_policy img.star_img,
+    .top_page_content .logo_section img.img_behind {
+        display: none;
+    }
+
+    footer .copyright {
+        margin-top: 7vw;
+    }
+
+    footer .copyright .noPadRight {
+        padding-right: 0;
+        text-align: left !important;
+        margin-top: 2vmin;
+    }
+
+    footer .copyright .noPadLeft {
+        border-right: none !important;
+    }
+
+    footer .copyright a.lefLink {
+        font-size: 4vmin;
+    }
+
+    footer .copyright .copyright_left {
+        margin-top: 4vw;
+        padding-left: 17px;
+    }
+
+    footer .copyright .copyright_left h5 {
+        font-size: 4vw;
+    }
+
+    footer .copyright h6.right_heading {
+        font-size: 3.6vmin;
+        margin-top: 4px;
+    }
+
+    footer .copyright span:not(.made_by),
+    footer .copyright i {
+        font-size: 5vmin;
+        font-weight: bold;
+    }
+
+    footer .copyright .row.my_row {
+        flex-direction: column !important;
+        text-align: left;
+        border-left: 1px solid #000;
+    }
+
+    /*end style footer*/
+
+    a.my_link {
+        padding: 4vw 3vw;
+        margin-top: 9vw;
+        font-size: 4vw;
+        line-height: 0;
+    }
+
+    button.my_btn {
+        padding: 4vw 3vw !important;
+        font-size: 4vw !important;
+        line-height: 0 !important;
+    }
+
+    /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+    /*============= END COMMON SECTIONS TO ALL PAGES ===============*/
+    /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+    /* START STYLE INDEX ========================== */
+
+    /* ALL THIS CODE WITH COMMENTS IT WAS FOR THE OLD INDEX PAGE */
+
+    /* .home .home_main_content .main_banner {
+        height: auto;
+    }
+
+    .home .home_main_content .main_banner .mainBanner_left h3 {
+        font-size: 7vw;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .home .home_main_content .main_banner .mainBanner_left h1 {
+        font-size: 11vw !important;
+        width: 60%;
+        margin: auto;
+    }
+
+    .home .home_main_content .main_banner .mainBanner_left a {
+        margin-bottom: 0;
+        font-size: 6vw;
+        margin-top: 2vw !important;
+    }
+
+    .home .home_main_content .main_banner .mainBanner_left h5 {
+        font-size: 4vw;
+    }
+
+    .home .home_main_content .main_banner .mainBanner_left {
+        position: relative;
+        padding: 8vw 5vw;
+    }
+
+    .home .home_main_content .main_banner .mainBanner_left::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #E8332C;
+        left: 10%;
+        top: -14px;
+        z-index: 4;
+    }
+
+    .home .home_main_content .main_banner .mainBanner_right {
+        background-size: cover;
+    } */
+
+    /*style main banner*/
+    /* .home .home_main_content .main_banner .mainBanner_right {
+        height: 280px;
+    }  */
+
+    .home .home_main_content .catalog_search form::before {
+        display: none;
+    }
+
+    .home .home_main_content .main_banner {
+        margin-top: 6vw;
+    }
+
+    .home .home_main_content .main_banner .main_banner_left .main_left_desc h2,
+    .home .home_main_content .main_banner .main_banner_left .main_left_desc h3 {
+        font-size: 8vw;
+    }
+
+    .home .home_main_content .main_banner .main_banner_left {
+        width: 100%;
+    }
+
+    .home .home_main_content .main_banner .main_banner_left .main_banner_img {
+        height: 50vmin;
+        background-position: center;
+    }
+
+    .home .home_main_content .main_banner .main_banner_left .main_left_desc {
+        background-color: #e7332c;
+        text-align: center;
+        padding: 25px;
+        margin-bottom: 5vw;
+    }
+
+    .home .home_main_content .main_banner .main_banner_right {
+        width: 100%;
+        margin-top: 6vw;
+    }
+
+    .home .home_main_content .main_banner .main_banner_right p:first-of-type {
+        font-size: 6vw;
+    }
+
+    .home .home_main_content .main_banner .main_banner_right p:last-of-type {
+        font-size: 5vw;
+        margin-top: 4vw;
+    }
+
+    .home .home_main_content .our_catalogs::before {
+        display: block;
+    }
+
+    /* END STYLE INDEX ========================== */
+
+    /*=========================== START ABOUT US */
+
+    .about_us img.absorberImg {
+        width: 64px;
+    }
+
+    .about_us img.halfRing {
+        display: none;
+    }
+
+    .about_us .home_main_content .about_us_content {
+        margin-top: 32px;
+    }
+
+    .about_us .home_main_content .about_us_content .aboutUs_left {
+        height: 80vmin;
+    }
+
+    .about_us .home_main_content .about_us_content .aboutUs_left img.roundImg {
+        width: 62vmin;
+    }
+
+    .about_us .home_main_content .about_us_content .aboutUs_left img.smalRedImg {
+        width: 17vmin;
+        right: 8%;
+        bottom: -15px;
+    }
+
+    .about_us .about_us_content .aboutUs_right {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .about_us .home_main_content .about_us_content .aboutUs_right h4 {
+        font-size: 6vmin !important;
+    }
+
+    .about_us .about_us_content .aboutUs_right p {
+        font-size: 4vmin !important;
+        margin-bottom: 10px;
+    }
+
+    .about_us .about_us_content .aboutUs_right ul {
+        margin-top: 30px;
+    }
+
+    .about_us .about_us_content .aboutUs_right ul li {
+        font-size: 4vmin;
+    }
+
+    .about_us .about_us_content .aboutUs_right ul li::before {
+        top: 2.2vw;
+        line-height: 0;
+    }
+
+    /*=========================== END ABOUT US */
+
+    /* START CAREERS PAGE ============================*/
+
+    .Careers .home_main_content .show_careers {
+        padding: 20px;
+    }
+
+    .Careers .home_main_content .show_careers h5,
+    .Careers .home_main_content .show_careers strong {
+        font-size: 4vmin;
+    }
+
+    .Careers .home_main_content .show_careers strong {
+        margin-top: 11px;
+    }
+
+    /* END CAREERS PAGE ============================*/
+
+    /*================================ START CONTACT US PAGE*/
+    img.absorberImg {
+        width: 25vw;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_right {
+        margin-top: 6vw;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_right .big_ring {
+        width: 100%;
+        height: 93vmin;
+        background-size: 100%;
+        top: 0;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_right .big_ring .contact_map {
+        width: 73vmin;
+        height: 73vmin;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_right .follow_us {
+        width: 35vw;
+        height: 35vw;
+        right: 5%;
+        bottom: -12%;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_right .follow_us li {
+        font-size: 4vw;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_right .follow_us a {
+        font-size: 4vw;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_left {
+        padding-left: 0;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_left .send_us {
+        margin-top: 25px;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_left .send_us h4 {
+        font-size: 5vmin;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_left .send_us input,
+    .contact_us .home_main_content .contactUs .contactUs_left .send_us textarea {
+        margin-bottom: 15px;
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    /* make the textarea last element in form */
+    .contact_us .home_main_content .contactUs .contactUs_left .send_us .my_order {
+        order: 4;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_left .send_us :nth-child(3) {
+        margin-top: -19px !important;
+    }
+
+    .contact_us .home_main_content .contactUs {
+        margin: 30px 0 63px 0;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_left h3 {
+        font-size: 6vw;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_left .contact_details {
+        width: 100%;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_left .contact_details h4 {
+        font-size: 4.7vw;
+    }
+
+    .contact_us .home_main_content .contactUs .contactUs_left .contact_info h4 {
+        font-size: 4.7vw;
+    }
+
+    /*================================ END CONTACT US PAGE*/
+
+    /* START CREATE ACCOUNT PAGE ==========================*/
+
+    .Create_Account .home_main_content .heading a {
+        font-size: 4vw;
+    }
+
+    .Create_Account .home_main_content .heading i {
+        font-size: 4vw;
+        vertical-align: text-bottom;
+        margin-right: -3px;
+    }
+
+    .form_accounts .personal_form,
+    .form_accounts .login_form {
+        width: 95%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .form_accounts .boRight {
+        border-right: none;
+        border-bottom: 1px solid #888;
+        padding-bottom: 20px;
+    }
+
+    .form_accounts h3 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-size: 6vw;
+    }
+
+    .form_accounts .bottom_content {
+        margin-bottom: 30px;
+    }
+
+    .form_accounts .bottom_content a {
+        font-size: 3vw;
+    }
+
+    .Create_Account label {
+        font-size: 4vw;
+    }
+
+    /* END CREATE ACCOUNT PAGE ==========================*/
+
+    /* ========================== START LOGIN PAGE */
+
+    .login .form_accounts .personal_form {
+        width: 100%;
+    }
+
+    .login .form_accounts .boRight {
+        height: auto;
+    }
+
+    .login .form_accounts .personal_form P {
+        font-size: 3.4vw;
+    }
+
+    .login .login_form p {
+        font-size: 3.4vw;
+    }
+
+    .login .form_accounts input {
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .login .form_accounts .bottom_content {
+        margin-top: 33px;
+    }
+
+    .login .form_accounts .login_form h3 {
+        margin-bottom: 1vw;
+        font-size: 5vw;
+    }
+
+    .login .form_accounts .login_form p {
+        font-size: 4vw;
+        margin-bottom: 1vw;
+    }
+
+    .login .form_accounts .login_form label {
+        font-size: 4vw;
+    }
+
+    /* ========================== END LOGIN PAGE */
+
+    /* START EDIT PROFILE PAGE ==========================*/
+
+    .edit_profile .card .tab-content {
+        margin-top: 32px;
+    }
+
+    .edit_profile .card .nav-tabs>li {
+        font-size: 4.5vw;
+    }
+
+    .edit_profile .card .nav-tabs>li>a {
+        padding: 10px 0;
+    }
+
+    .edit_customer_info h1 {
+        padding: 10px 0px !important;
+        font-size: 7vw;
+    }
+
+    .edit_profile .card .nav-tabs {
+        margin-bottom: -1px;
+    }
+
+    .edit_profile .edit_user_form {
+        margin-bottom: 69px;
+    }
+
+    .edit_profile .edit_user_form label {
+        font-size: 4vw !important;
+    }
+
+    .edit_profile .edit_user_form .left_inputs,
+    .edit_profile .edit_user_form .middle_inputs,
+    .edit_profile .edit_user_form .right_inputs {
+        width: 100%;
+    }
+
+    .edit_profile .edit_user_form input {
+        font-size: 4vw;
+    }
+
+    .edit_profile .edit_user_form select+i {
+        top: 40px;
+        right: 6vw;
+    }
+
+    .edit_profile .edit_user_form .middle_inputs .form-group:first-child {
+        margin-top: 0 !important;
+    }
+
+    .edit_profile .edit_user_form h4 {
+        font-size: 5vw;
+    }
+
+    #edit .form-check {
+        bottom: -60px;
+    }
+
+    label.form-check-label {
+        font-size: 4.2vw;
+        margin-left: 8vw;
+    }
+
+    label.form-check-label:before {
+        width: 6vw;
+        left: -10vw;
+        height: 6vw;
+        top: -1px;
+    }
+
+    input[type='checkbox']:checked+label.form-check-label:after {
+        font-size: 12vw;
+        top: -6vw;
+        left: -12vw;
+    }
+
+    /* start orders */
+    #orders {
+        padding: 4vw;
+    }
+
+    #orders .no_orders {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    #orders h3 {
+        font-size: 5vw;
+    }
+
+    #orders .no_orders_left h5 {
+        font-size: 4vw;
+    }
+
+    #orders .no_orders_right h5 {
+        margin-left: -2vw;
+    }
+
+    #orders .no_orders_right span {
+        font-size: 7vw;
+        vertical-align: sub;
+        margin-right: -9px;
+    }
+
+    #orders .no_orders_right span+a {
+        font-size: 4vw;
+    }
+
+    #address {
+        margin-bottom: 45px;
+    }
+
+    #address button.my_btn {
+        bottom: 35px;
+    }
+
+    #address .row .col-md-6:first-child {
+        border-right: none;
+        border-bottom: 2px solid #dee2e6;
+    }
+
+    #address .customer_details {
+        margin-bottom: 8vw;
+    }
+
+    #address .customer_details h5,
+    #address .customer_details a {
+        font-size: 4.2vw;
+    }
+
+    #address .row .col-md-6 {
+        padding: 7vw 7vw 14vw 7vw;
+    }
+
+    #address .bottom_section span {
+        font-size: 4.5vw;
+    }
+
+    #address label.form-check-label {
+        margin-left: 5vw;
+    }
+
+    /* end orders */
+    /* END EDIT PROFILE PAGE ==========================*/
+
+    /*============================= START CHECKOUT PAGE*/
+    .checkout .card .tab-content {
+        margin-top: 32px;
+    }
+
+    .checkout .card .nav-tabs>li {
+        font-size: 4.5vw;
+    }
+
+    .checkout .card .nav-tabs>li>a {
+        padding: 10px 0;
+        line-height: .9;
+    }
+
+    .edit_customer_info h1 {
+        padding: 10px 0px !important;
+        font-size: 7vw;
+    }
+
+    .checkout .card .nav-tabs {
+        margin-bottom: -1px;
+    }
+
+    .checkout h1 {
+        padding: 10px 0px !important;
+        font-size: 7vw;
+    }
+
+    /* style table */
+
+    /* hide the custom scrollbar at the bottom of table */
+    .checkout_table::-webkit-scrollbar {
+        display: none;
+    }
+
+    .checkout #my_cart {
+        margin-bottom: 43px;
+    }
+
+    .checkout #my_cart .mycart_content {
+        margin-bottom: 28px;
+    }
+
+    .checkout #my_cart .checkout_table {
+        width: 92% !important;
+        margin: auto;
+    }
+
+    .checkout #my_cart .checkout_table th,
+    .checkout #my_cart .checkout_table td {
+        padding: 0 20px;
+    }
+
+    .checkout #my_cart .checkout_table td {
+        padding: 0;
+    }
+
+    .checkout #my_cart .checkout_table th,
+    .checkout #my_cart .checkout_table h4,
+    .checkout #my_cart .checkout_table p {
+        font-size: 4vw;
+        line-height: 1;
+    }
+
+    .checkout #my_cart .checkout_table p {
+        margin-top: 5px;
+    }
+
+    .checkout #my_cart .checkout_table .Product-img {
+        width: 23vw;
+        height: 20vw;
+        background-size: contain;
+        margin: 12px 0 13px 30px;
+    }
+
+    .checkout #my_cart .checkout_table span.product_price,
+    .checkout #my_cart .checkout_table h2.toatal_price {
+        font-size: 5vw;
+    }
+
+    .checkout #my_cart .checkout_table .bottom_section {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .withMarginLeft {
+        margin-left: 15px;
+    }
+
+    .checkout #my_cart .checkout_table .input-group {
+        width: 20vmax;
+    }
+
+    .checkout #my_cart .mycart_right {
+        border-top: 2vw solid #E8332C;
+        width: 92%;
+        margin: auto;
+    }
+
+    .checkout #my_cart .mycart_right .mycart_right_heading h6 {
+        font-size: 5vw;
+    }
+
+    .checkout #my_cart .mycart_right .mycart_right_heading h2 {
+        font-size: 9vw;
+    }
+
+    .checkout #my_cart .mycart_right .mycart_right_heading {
+        padding: 2vw;
+    }
+
+    .checkout #my_cart .mycart_right .proced {
+        padding-bottom: 10vw;
+    }
+
+    .checkout .proced span {
+        font-size: 8vw;
+        left: -6vw;
+        top: 0;
+    }
+
+    .checkout .proced span i {
+        vertical-align: super;
+    }
+
+    .checkout .proced h5:hover span {
+        font-size: 8vw;
+        left: 94%;
+        top: -1px;
+    }
+
+    .checkout .proced h5 a {
+        display: block;
+        font-size: 4vw;
+    }
+
+    .checkout #my_cart .mycart_right .paypal {
+        margin: 5vw;
+    }
+
+    .checkout #my_cart .mycart_right .paypal img {
+        width: 14vw;
+    }
+
+    /* style payment tab section */
+
+    .checkout #payment {
+        width: 90%;
+        margin: auto;
+    }
+
+    .checkout #payment .row .col-md-8 {
+        margin-bottom: 70px !important;
+    }
+
+    .checkout #payment .chkout_form form .noMrgTop {
+        margin-top: 0 !important;
+    }
+
+    .checkout #payment .chkout_form h3 {
+        font-size: 5vw;
+        padding: 3vw 5vw;
+        margin-bottom: 0;
+    }
+
+    .checkout #payment .chkout_form form {
+        padding: 4vw 1vw;
+    }
+
+    .checkout #payment .chkout_form h4 {
+        font-size: 5vw;
+    }
+
+    .checkout #payment .form-check {
+        bottom: -52px;
+    }
+
+    .checkout #payment .chkout_form label {
+        font-size: 4vw;
+    }
+
+    .checkout #payment .proced {
+        padding-bottom: 30px;
+    }
+
+    .checkout #payment .chkout_form input,
+    .checkout #payment .chkout_form textarea {
+        width: 100%;
+    }
+
+    .checkout .chkout_right {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        border-top: 2vw solid #E8332C;
+    }
+
+    .checkout .chkout_right .chkout_right_form form {
+        width: 90%;
+        margin: 10px auto 0;
+    }
+
+    .checkout .chkout_right .chkout_right_form h3 {
+        margin-bottom: 8px;
+        font-size: 5vw;
+    }
+
+    .checkout .chkout_right .chkout_right_form form label {
+        font-size: 4vw;
+    }
+
+    .checkout .chkout_right .chkout_right_form input {
+        font-size: 4vw;
+    }
+
+    .checkout .chkout_right .chkout_right_form form .half_width {
+        width: 50%;
+    }
+
+    .checkout .chkout_right .chkout_right_form .chkout_right_botm {
+        width: 90%;
+        margin-left: 0;
+        margin: auto;
+    }
+
+    .checkout .chkout_right .chkout_right_form .chkout_right_botm .dsflex h6 {
+        font-size: 4vw;
+    }
+
+    .checkout .chkout_right .chkout_right_form .chkout_right_botm .dsflex span {
+        font-size: 8vw;
+    }
+
+    .checkout .chkout_right .chkout_right_heading {
+        padding: 0;
+    }
+
+    .checkout .chkout_right .chkout_right_heading h6 {
+        font-size: 7vw;
+    }
+
+    .checkout .chkout_right .chkout_right_heading h2 {
+        font-size: 11vw;
+    }
+
+    .checkout .chkout_right .chkout_right_form .chkout_right_botm .proced {
+        width: 77%;
+    }
+
+    .checkout .proced h5 {
+        margin-top: 5vw;
+        font-size: 5vw;
+        margin-left: -12px;
+    }
+
+    .checkout .chkout_right .paypal {
+        margin: 20px;
+    }
+
+    .checkout .chkout_right .paypal img {
+        width: 13vw;
+    }
+
+    .checkout .chkout_right .proced span {
+        font-size: 8vw;
+    }
+
+    /* end style payment tab section */
+
+    /*============================= END CHECKOUT PAGE*/
+
+    /* ================================================================================= */
+
+    /* START PART NUMBER SEARCH =======================*/
+    .partNumber_search .home_main_content .part_number form::before {
+        display: none;
+    }
+
+    .partNumber_search .home_main_content form .bottomSearch {
+        margin-top: 33px;
+    }
+
+    select {
+        font-size: 4vw !important;
+    }
+
+    select+i {
+        font-size: 5vmax;
+    }
+
+    .partNumber_search .home_main_content .part_number form button {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    /* END PART NUMBER SEARCH =======================*/
+
+    /* ============================== START STATUS AND RETURN */
+    .order .return_steps {
+        padding: 8vw 0 4vw 0;
+    }
+
+    .order .return_steps .return_steps_content {
+        flex-direction: column;
+    }
+
+    .order .return_steps .return_steps_content .return {
+        width: 100%;
+        margin-bottom: 5vw;
+    }
+
+    .order .return_steps .return_steps_content .return .bullet span {
+        height: 9vw;
+        width: 9vw;
+        font-size: 5vw;
+        line-height: 8.4vw;
+    }
+
+    .order .return_steps .return_steps_content .return .bullet span::before,
+    .order .return_steps .return_steps_content .return .bullet span::after {
+        display: none;
+    }
+
+    .order .return_steps .return_steps_content .return img {
+        width: 19vw;
+    }
+
+    .order .home_main_content .below_info .get_started {
+        margin-left: 0;
+    }
+
+    .order .home_main_content .below_info form,
+    .order .home_main_content .below_info .look_up form {
+        width: 100%;
+    }
+
+    .order .home_main_content .below_info h5,
+    .order .home_main_content .below_info h4,
+    .order .home_main_content .below_info p {
+        font-size: 4vw;
+    }
+
+    .order .home_main_content .below_info form input {
+        font-size: 4vw;
+        font-weight: 400;
+    }
+
+    .order .home_main_content .below_info form label {
+        font-size: 3.7vw;
+    }
+
+    .order .home_main_content .below_info .look_up {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .order .home_main_content .below_info .below_info_bottom {
+        width: 90%;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+
+    /* ============================== END STATUS AND RETURN */
+
+    /* START STYLE THE PARTCATALOG C ===================== */
+    .partCatalogC .home_main_content .part_catalog_title {
+        padding: 3vw 0;
+    }
+
+    .PartCatalog .home_main_content .catalog_search form::before {
+        display: none;
+    }
+
+    .partCatalogC .home_main_content .part_catalog_title::before {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #fff;
+        left: 15vw;
+        top: -10px;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details {
+        margin-top: 5vw;
+    }
+
+    .partCatalogC .home_main_content .part_catalog_title .noPadding {
+        padding: 0;
+    }
+
+    .partCatalogC .home_main_content .part_catalog_title .part_info {
+        text-align: center;
+    }
+
+    .partCatalogC .home_main_content .part_catalog_title .part_info ul li a {
+        font-size: 4vw;
+    }
+
+    .partCatalogC .home_main_content .part_catalog_title .part_info_back h5 i {
+        font-size: 4vw;
+    }
+
+    .partCatalogC .home_main_content .part_catalog_title .part_info_back h5 a {
+        font-size: 4vw;
+        margin-right: 12vw;
+    }
+
+    .partCatalogC .home_main_content table.specifications_table {
+        width: 100%;
+    }
+
+    .partCatalogC .home_main_content table.specifications_table th {
+        padding: 2vw 0;
+    }
+
+    .partCatalogC .home_main_content table.specifications_table td {
+        font-size: 4vw;
+    }
+
+    /* style table */
+
+    .partCatalogC .home_main_content table {
+        margin-top: 2vw;
+    }
+
+    .partCatalogC .home_main_content table thead th {
+        padding: 0 15px;
+        vertical-align: middle;
+        font-size: 4vw;
+    }
+
+    .partCatalogC .home_main_content table tbody th {
+        font-size: 4vw;
+        padding: 0;
+        vertical-align: middle;
+        padding-left: 3vw;
+    }
+
+    /* end style table */
+
+    .partCatalogC .home_main_content .product_caatalog_details .product_details .heading_details h3 {
+        font-size: 6vw;
+        margin-top: 3vw;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .product_details .heading_details p {
+        font-size: 5vw;
+        margin-bottom: 2vw;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .product_details .sliderOfProduct {
+        height: 75vmin;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .more_details {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .more_details h3 {
+        font-size: 6vw;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .more_details p {
+        font-size: 4vw;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_benefit ul.benefits li {
+        font-size: 4vw;
+        padding-left: 2vw;
+        line-height: 1.2;
+        margin-bottom: 2vw;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_benefit ul.benefits li::before {
+        width: 8px;
+        height: 8px;
+        top: 1.2vw;
+        left: -2vw;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom {
+        margin-top: 3vw;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom h2 {
+        font-size: 10vw;
+        margin-bottom: 4vw;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom .more_details_addTocart {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom .input-group {
+        width: 27vw;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom .btn-outline-secondary {
+        padding: 2vw 3vw;
+        font-size: 3vw;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom .more_details_addTocart {
+        width: 100%;
+    }
+
+    .partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom .inline-group .form-control {
+        padding: 0;
+        font-size: 4vw;
+    }
+
+    .partCatalogC .home_main_content .wich_right_product {
+        margin-top: 6vw;
+        overflow: auto;
+        padding-left: 3vw;
+    }
+
+    /* hide the custom scrollbar at the bottom of table */
+    .partCatalogC .home_main_content .wich_right_product::-webkit-scrollbar {
+        display: none;
+    }
+
+    .partCatalogC .home_main_content h3,
+    .partCatalogC .home_main_content h5 {
+        font-size: 5vw;
+    }
+
+    .partCatalogC .home_main_content .elem_specifications {
+        margin-top: 3vw;
+    }
+
+    .partCatalogC .home_main_content .elem_specifications .right_specif {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .partCatalogC .home_main_content .elem_specifications .right_specif ul::-webkit-scrollbar {
+        width: 4px !important
+    }
+
+    .partCatalogC .home_main_content .elem_specifications .right_specif ul li {
+        font-size: 5vw;
+    }
+
+    .partCatalogC .home_main_content .service_tip {
+        margin-top: 6px;
+        padding: 7vw 4vw;
+    }
+
+    .partCatalogC .home_main_content .service_tip span {
+        padding: 2vw 3vw;
+        font-size: 5.2vw;
+    }
+
+    .partCatalogC .home_main_content .service_tip .service_tip_text {
+        margin-left: 0;
+        margin-top: 4vw;
+    }
+
+    .partCatalogC .home_main_content .service_tip .service_tip_text p {
+        font-size: 4vw;
+    }
+
+    .partCatalogC .home_main_content .warranty {
+        margin-top: 15px;
+        padding-left: 4vw;
+    }
+
+    .partCatalogC .home_main_content .warranty span {
+        font-size: 5vw;
+    }
+
+    .partCatalogC footer {
+        margin-top: 10px;
+    }
+
+    /* hide the custom scrollbar at the bottom of table */
+    .partCatalogC table::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* END STYLE THE PARTCATALOG C ===================== */
+
+    /* =============================== START STYLE THE PARTCATALOG B */
+    .part_catalog_title {
+        padding: 2vw 0;
+    }
+
+    .part_catalog_title .part_info {
+        margin-left: 5vmax;
+    }
+
+    .part_catalog_title .part_info ul li a {
+        font-size: 4vw;
+    }
+
+    .part_catalog_title .part_info_back h5 i {
+        font-size: 4vw;
+    }
+
+    .part_catalog_title .part_info_back h5 a {
+        font-size: 4vw;
+        margin-right: 12vw;
+    }
+
+    .partCatalogB .ourMain_title ul li a {
+        font-size: 5vw;
+    }
+
+    .partCatalogB .our_accessories {
+        margin-top: 8vw;
+    }
+
+    .partCatalogB .our_accessories h5 {
+        font-size: 5vw;
+    }
+
+    .partCatalogB ul.accessories_list {
+        width: 100%;
+    }
+
+    .partCatalogB ul.accessories_list li {
+        font-size: 4.5vw;
+    }
+
+    .partCatalogB ul.accessories_list li .dropdown-menu a {
+        font-size: 5vw;
+        font-family: 'AlegreyaSansSC-Medium';
+    }
+
+    .partCatalogB ul.accessories_list li a.dropdown-toggle i {
+        font-size: 6vw;
+    }
+
+    .partCatalogB ul.accessories_list li a.dropdown-toggle i:first-of-type {
+        display: none;
+    }
+
+    .partCatalogB ul.accessories_list li a.dropdown-toggle i:last-of-type {
+        display: block !important;
+    }
+
+    .partCatalogB ul.accessories_list li .dropdown-menu {
+        left: 0 !important;
+        top: 109% !important;
+        width: 100%;
+        position: absolute !important;
+    }
+
+    .partCatalogB .our_main_products {
+        margin-top: 10vw;
+    }
+
+    .partCatalogB .our_single_product {
+        width: 100%;
+    }
+
+    .partCatalogB .our_single_product_img {
+        background-size: contain;
+        width: 100%;
+        height: 55vw;
+        margin: auto;
+    }
+
+    .partCatalogB .our_single_product_img a.add_this_item {
+        width: 7vw;
+        height: 7vw;
+        font-size: 5vw;
+        line-height: 6.8vw;
+    }
+
+    .partCatalogB .our_single_product_details {
+        margin-top: 3vw;
+    }
+
+    .partCatalogB .our_single_product_details h6 {
+        font-size: 5vw;
+    }
+
+    .partCatalogB .our_single_product_details p {
+        font-size: 5vw;
+    }
+
+    .partCatalogB .more_details_bottom h2 {
+        font-size: 7vw;
+    }
+
+    .partCatalogB .our_main_products .gotop {
+        left: 50%;
+        bottom: -7vw;
+        width: 7vw;
+        height: 7vw;
+        line-height: 7vw;
+        font-size: 5vw;
+    }
+
+    .partCatalogB footer {
+        margin-top: 15vw;
+    }
+
+    /* =============================== END STYLE THE PARTCATALOG B */
+
+}

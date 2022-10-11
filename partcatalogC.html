@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Part Catalog C</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/my_responsive.css">
+</head>
+
+<body class="partCatalogC">
+    <div class="my_container">
+        <!--start top_page_content -->
+        <div class="top_page_content">
+            <div class="main_navbar d-flex mt-3">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light p-0 mr-4">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="las la-bars"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="myNav">
+                        <!-- srart links lists -->
+                        <ul class="links_list navbar-nav">
+                            <li class="nav-item">
+                                <img src="./images/black_ring.png" alt="blackRing">
+                                <a class="nav-link" href="about_us.html">
+                                    ABOUT US
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <img src="./images/black_ring.png" alt="blackRing">
+                                <a class="nav-link" href="careers.html">
+                                    CAREERS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <img src="./images/black_ring.png" alt="blackRing">
+                                <a class="nav-link" href="contact_us.html">
+                                    CONTACT US
+                                </a>
+                            </li>
+                        </ul>
+                        <!--\end links lists -->
+                        <img src="images/primo_logo.png" alt="logoImg">
+                    </div>
+                    <!--\end collaps navbar -->
+                </nav>
+                <!-- start slinkIcon  -->
+                <div class="slinkIcon">
+                    <!-- social media list -->
+                    <ul class="smLinks list-unstyled text-white d-flex mb-0">
+                        <li class="mr-4 font-weight-bold text-dark">
+                            FOLLOW US
+                        </li>
+                        <li class="mr-3 text-dark">
+                            <a class="h5" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="text-dark">
+                            <a class="h5" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--\end slinkIcon  -->
+            </div>
+            <!-- ************************************************ -->
+            <div class="sidenav_overlay"></div>
+            <!-- start sidenav-->
+            <div id="mySidenav" class="sidenav">
+                <div class="user_purchases">
+                    <div class="row m-0">
+                        <div class="col-md-12 p-0">
+                            <div class="user_cart">
+                                <h3 style="color: #E8332C;font-weight: bold;">in your cart</h3>
+                                <span class="closebtn">
+                                    <i class="las la-times"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-0">
+                        <!-- fill it by js and then by php -->
+                        <div class="purchases_content" id="purchases_content">
+                        </div>
+                    </div>
+                    <div class="row m-0">
+                        <div class="subtotal mt-2 w-100 mb-5">
+                            <h5>subtotal:</h5>
+                            <div class="subtotal_content">
+                                <h3 class="text-white mb-0 font-weight-bold">
+                                    12.05
+                                    <span class="currency">$</span>
+                                </h3>
+                                <a href="checkout.html">proceed to check out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--\end sidenav-->
+
+            <!--\end main navbar-->
+
+            <!-- =============================================================== -->
+            <div class="logo_section bg-white">
+                <div class="row m-0 align-items-center">
+                    <div class="col-md-8 p-0">
+                        <div class="logoSection_left">
+                            <a href="index.html">
+                                <img src="images/primo_logo.png" alt="logoImg">
+                            </a>
+                            <h5 class="ml-5 d-inline-block mb-0">
+                                all
+                                <span class="font-weight-bold">the parts</span>
+                                your car will ever need
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-right p-0">
+                        <div class="logoSection_right">
+                            <ul style="list-style: none;margin-bottom: 0;margin-top: 30px">
+                                <li class="text-center d-inline-block mr-5 first">
+                                    <img src="images/user_icon.png" alt="userIcon" class="dropdown-toggle"
+                                        data-toggle="dropdown" style="cursor: pointer;width: 35px">
+                                    <span class="font-weight-bold d-block mt-2">
+                                        profile
+                                    </span>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <h5 class="font-weight-bold" style="font-size: 17px;">welcome</h5>
+                                        </li>
+                                        <li>
+                                            <h6 class="font-weight-bold" style="font-size: 13px;">
+                                                access your account and manage orders
+                                            </h6>
+                                        </li>
+                                        <li>
+                                            <div class="register_btn bg-danger text-center">
+                                                <a href="login.html" class="text-white">login</a>
+                                                <span class="mx-2 text-white">/</span>
+                                                <a href="create_account.html" class="text-white">signup</a>
+                                            </div>
+                                        </li>
+                                        <hr style="border: 1px solid rgba(0,0,0,.1);">
+                                        <li>
+                                            <a href="edit_profile.html" class="text-dark font-weight-bold">
+                                                account
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="text-dark font-weight-bold">
+                                                your orders
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="order_status.html" class="text-dark font-weight-bold">
+                                                orders status and returns
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="contact_us.html" class="text-dark font-weight-bold">
+                                                contact us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="text-center d-inline-block">
+                                    <img src="images/cart_icon.png" class="cartIcon" alt="cartIcon"
+                                        style="cursor: pointer;width: 40px;">
+                                    <span class="font-weight-bold d-block mt-2">
+                                        cart
+                                    </span>
+                                    <span class="my_badge">0</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/white_ring.png" alt="whiteRing" class='img_behind'>
+            </div>
+        </div>
+        <!--\end top_page_content -->
+    </div>
+    <!--\end my_container -->
+
+    <div class="my_container">
+        <!-- START HOME MAIN CONTENT-->
+        <div class="home_main_content">
+
+            <!-- ************************************************ -->
+
+            <div class="search_section">
+                <div class="row m-0 align-items-center">
+                    <div class="col-md-6">
+                        <div class="search_section_left">
+                            <img src="images/black_ring.png" alt="blackRing" style="width: 35px;">
+                            <h3 class="d-inline-block mb-0 ml-3" style="vertical-align: middle;">
+                                search your parts
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-0">
+                        <div class="search_section_right">
+                            <form action="" id="mainForm">
+                                <div class="form-group d-flex align-items-center justify-content-end mb-0">
+                                    <label for="userSearch"
+                                        style="font-size: 18px; margin-bottom: 0;font-weight: bold;text-transform: uppercase;">
+                                        search by
+                                    </label>
+                                    <input type="search" class="form-control" id="userSearch" name="userSearch"
+                                        placeholder="YEAR MAKE,MODEL,PART OR PART NUMBER">
+                                    <span class="input-group-append">
+                                        <button class="border-left-0 border-0 bg-danger" id="searchBtn" type="button"
+                                            name="searchBtn">
+                                            <i class="las la-search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =========================================== -->
+
+            <!-- start part catalog title -->
+            <div class="part_catalog_title bg-white">
+                <div class="row m-0">
+                    <div class="col-md-8 col-sm-12 noPadding">
+                        <div class="part_info">
+                            <ul>
+                                <li><a href="">part catalog</a><i class="las la-angle-right"></i></li>
+                                <li><a href="">volkswagen</a><i class="las la-angle-right"></i></li>
+                                <li><a href="">2012</a><i class="las la-angle-right"></i></li>
+                                <li><a href="">gti</a><i class="las la-angle-right"></i></li>
+                                <li><a href="">2.0ll4 trubocharged</a><i class="las la-angle-right"></i></li>
+                                <li><a href="">belt drive</a><i class="las la-angle-right"></i></li>
+                                <li><a href="" class="active_list">belt</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 noPadding">
+                        <div class="part_info_back text-right">
+                            <h5 class="mb-0">
+                                <i class="icofont-rounded-left"></i>
+                                <a href="partcatalogB.html">
+                                    back
+                                </a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end part catalog title -->
+
+            <!-- =========================================== -->
+
+            <!-- start product catalog details -->
+            <div class="product_caatalog_details">
+                <div class="row m-0">
+                    <div class="col-md-6 bg-white">
+                        <!-- start product details -->
+                        <div class="product_details">
+                            <div class="heading_details">
+                                <h3 id="productName">continental440k6mk</h3>
+                                <p id="prodcutDesc">mileage maker multi v-belt</p>
+                            </div>
+                            <div class="sliderOfProduct">
+                                <div id="my_carousel" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active"
+                                            style="background-image: url(./images/product_img.jpg);">
+                                        </div>
+                                        <div class="carousel-item"
+                                            style="background-image: url(./images/product_img.jpg);">
+                                        </div>
+                                        <div class="carousel-item"
+                                            style="background-image: url(./images/product_img.jpg);">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#my_carousel" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#my_carousel" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end product details -->
+                    </div>
+                    <div class="col-md-6">
+                        <!-- start more details -->
+                        <div class="more_details">
+                            <h3 id="more_details_heading">mileage maker multi v-belt</h3>
+                            <p id="more_details_desc">
+                                the mileage maker belt long was designed to be your economical,reliable replacement
+                                solution for oem import,domestic,and heavy duty applications.
+                            </p>
+                            <div class="more_details_benefit">
+                                <h3>features & benefits:</h3>
+                                <ul class="benefits" id="benefits">
+                                    <li class="list_benefits">
+                                        epdm compounds outlast and outperform other materials,rarely showing cracks even
+                                        at high mileage
+                                    </li>
+                                    <li class="list_benefits">
+                                        polyester fiber tensile members maintain tension integrity during belt service
+                                        life,by reducing stretch while still maintaining flexibility
+                                    </li>
+                                    <li class="list_benefits">
+                                        straight-ribbed belt design
+                                    </li>
+                                    <li class="list_benefits">
+                                        abrasion,oil and chemical resistant
+                                    </li>
+                                    <li class="list_benefits">
+                                        temprature stable from -30f to 140f
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="more_details_bottom">
+                                <h2 id="orignal_price">5.32 $</h2>
+                                <div class="more_details_addTocart">
+                                    <!-- incre_btn -->
+                                    <div class="input-group inline-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary btn-minus">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                        </div>
+                                        <input class="form-control quantity" min="0" name="quantity" value="1"
+                                            type="number">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary btn-plus">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button class="text-uppercase my_btn" id="add_cart_btn" name="add_cart_btn">
+                                        add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end more details -->
+                    </div>
+                </div>
+            </div>
+            <!-- end product catalog details -->
+
+            <!-- =========================================== -->
+
+            <!-- start wich right product -->
+            <div class="wich_right_product">
+                <h3>which belt is right for me?</h3>
+                <div class="table-responsive" style=" display: table;">
+                    <table class="table" style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-left">type</th>
+                                <th scope="col">durability</th>
+                                <th scope="col">quiet operation</th>
+                                <th scope="col">performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-left">economy</th>
+                                <td style="color: #ffa500;"><i class="las la-star"></i></td>
+                                <td style="color: #ffa500;"><i class="las la-star"></i></td>
+                                <td style="color: #ffa500;"><i class="las la-star"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-left">standard replacement</th>
+                                <td style="color: #0000ff;">
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                </td>
+                                <td style="color: #0000ff;">
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                </td>
+                                <td style="color: #0000ff;">
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-left">heavy duty</th>
+                                <td style="color: #663300;">
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                </td>
+                                <td style="color: #663300;">
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                </td>
+                                <td style="color: #663300;">
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-left">high performance</th>
+                                <td style="color: #ff0000;">
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                </td>
+                                <td style="color: #ff0000;">
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                </td>
+                                <td style="color: #ff0000;">
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- end wich right product -->
+
+            <!-- =========================================== -->
+
+            <!-- start element specifications -->
+            <div class="elem_specifications">
+                <div class="row m-0">
+                    <div class="col-md-6">
+                        <table class="table specifications_table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="2">continental440k6mk specifications</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>number of ribs</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>top width (in)</td>
+                                    <td>0.825</td>
+                                </tr>
+                                <tr>
+                                    <td>top width (mm)</td>
+                                    <td>20.955</td>
+                                </tr>
+                                <tr>
+                                    <td>belt type</td>
+                                    <td>poly-v belt</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right_specif">
+                            <h5>alternate/oem part number(s):</h5>
+                            <ul>
+                                <li>0127117004</li>
+                                <li>0127177004</li>
+                                <li>0129730115</li>
+                                <li>06A145933D</li>
+                                <li>06J260849D</li>
+                                <li>0127117004</li>
+                                <li>0127177004</li>
+                                <li>0129730115</li>
+                                <li>06A145933D</li>
+                                <li>06J260849D</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end element specifications -->
+
+            <!-- =========================================== -->
+
+            <div class="service_tip">
+                <span>service tip:</span>
+                <div class="service_tip_text">
+                    <p>
+                        always replace belts and tensioners toghter. old tensioners will reduce a belt's lifespan,and
+                        can lead to issues such as overheating,a dead battery,diminished power steering,or poor air
+                        conditioning performance.
+                    </p>
+                </div>
+            </div>
+
+            <!-- =========================================== -->
+
+            <div class="warranty">
+                <h5 class="mb-0">
+                    <span id="elem_warranty">
+                        continental
+                    </span>
+                    warranty information:
+                </h5>
+                <span style="font-size: 20px;">12 months</span>
+            </div>
+        </div>
+        <!--\END HOME MAIN CONTENT-->
+
+        <!-- START FOOTER -->
+        <footer>
+            <!-- start our policy -->
+            <div class="our_policy">
+                <div class="row m-0">
+                    <div class="col-md-4">
+                        <div class="product_policy policy">
+                            <img src="images/check.png" alt="check" class="mt-1">
+                            <h6 class="text-uppercase text-white font-weight-bold">original products</h6>
+                            <p class="text-uppercase text-white">
+                                all parts and accessories on our site are new and original.
+                                100% guarantee!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="shipping_policy policy">
+                            <img src="images/earth.png" alt="earth">
+                            <h6 class="text-uppercase text-white font-weight-bold">
+                                worldwide shipping
+                            </h6>
+                            <p class="text-uppercase text-white">
+                                we ship all over the world!
+                                just make an order and choose your country.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="payment_policy policy">
+                            <img src="images/lock.png" alt="lock">
+                            <h6 class="text-uppercase text-white font-weight-bold">
+                                secure payment
+                            </h6>
+                            <p class="text-uppercase text-white">
+                                with us, you can pay securely with your own bank,paypal account or credit card.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/red_ring.png" class="red_img_behind" alt="redRing">
+            </div>
+            <!--\end our policy -->
+            <div class="copyright">
+                <div class="row m-0 chang_flex align-items-end">
+                    <div class="col-md-6">
+                        <div class="copyright_left">
+                            <h5 class="text-uppercase mb-0">
+                                copyright&copy;2021 /
+                                <span class="made_by">
+                                    made by primoweb
+                                </span>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 text-right">
+                        <div class="row m-0 my_row">
+                            <div class="col-md-6 col-12 border-right border-dark col-5 noPadLeft">
+                                <h5 class="mb-0"><i class="fas fa-phone-alt h5"></i>
+                                    <span>call us</span>
+                                </h5>
+                                <h6 class="mb-0">
+                                    <a href="" class="text-dark lefLink">+123456789</a>
+                                </h6>
+                            </div>
+                            <div class="col-md-6 col-12 text-left col-7 noPadRight">
+                                <h5 class="mb-0"><i class="fas fa-map-marker-alt h5"></i>
+                                    <span>Lebanon</span>
+                                </h5>
+                                <h6 class="mb-0 right_heading">Lebanon - Beirut</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+    <!--\end second my_container -->
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/choosen_products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

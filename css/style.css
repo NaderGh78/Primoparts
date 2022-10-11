@@ -1,0 +1,2814 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+/* Define all fonts */
+@font-face {
+    font-family: 'AlegreyaSansSC-Regular';
+    src: url('../fonts/AlegreyaSansSC-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'AlegreyaSansSC-Light';
+    src: url('../fonts/AlegreyaSansSC-Light.ttf');
+}
+
+@font-face {
+    font-family: 'AlegreyaSansSC-Medium';
+    src: url('../fonts/AlegreyaSansSC-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'AlegreyaSansSC-Bold';
+    src: url('../fonts/AlegreyaSansSC-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'AlegreyaSansSC-ExtraBold';
+    src: url('../fonts/AlegreyaSansSC-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'icofont';
+    src: url('../fonts/icofont.ttf');
+}
+
+/* =========================================== */
+/*style the scrollbar*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #2a3181 #fff;
+}
+
+/* Works on Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #E9E9E9;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #e7332c;
+}
+
+/* =========================================== */
+
+body {
+    background-color: #E9E9E9;
+    height: auto;
+    overflow-x: hidden;
+}
+
+/*this class to make the body with overflow hidden when click on x */
+.overfl {
+    overflow: hidden !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* my custom container */
+.my_container {
+    width: 95%;
+    margin: auto;
+}
+
+/* =============================================================================== */
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*============= START COMMON SECTIONS TO ALL PAGES ===============*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+/* start top page content */
+.top_page_content .main_navbar {
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.top_page_content .main_navbar nav {
+    background-color: transparent !important;
+}
+
+.top_page_content .main_navbar nav .navbar-collapse img {
+    display: none;
+}
+
+.top_page_content .main_navbar ul.links_list {
+    position: relative;
+}
+
+.top_page_content .main_navbar ul.links_list::before {
+    content: "/";
+    position: absolute;
+    right: -5px;
+    font-size: 28px;
+    top: -2px;
+    color: #3f4040;
+}
+
+.top_page_content .main_navbar ul.links_list li {
+    position: relative;
+    margin-left: 38px;
+}
+
+.top_page_content .main_navbar ul.links_list li img {
+    display: none;
+}
+
+.top_page_content .main_navbar ul.links_list li:last-child {
+    margin-right: 20px;
+}
+
+.top_page_content .main_navbar ul.links_list li a.active_link {
+    color: #e7332c;
+}
+
+.top_page_content .main_navbar ul.links_list li a.active_link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #e7332c;
+}
+
+.top_page_content .main_navbar ul.links_list li a.active_link:hover {
+    color: #000;
+}
+
+.top_page_content .main_navbar ul.links_list li a {
+    position: relative;
+    font-weight: bold;
+    padding-left: 0;
+    padding-right: 0;
+    color: #3f4040;
+    font-family: 'AlegreyaSansSC-Regular';
+}
+
+.top_page_content .main_navbar ul.links_list li:first-child a {
+    padding-left: 0;
+}
+
+.top_page_content .main_navbar ul.links_list li:not(:first-child)::before {
+    content: "\2022";
+    color: #000;
+    position: absolute;
+    font-size: 25px;
+    left: -21px;
+    top: 0px;
+}
+
+.top_page_content .main_navbar ul.links_list li a::after {
+    content: '';
+    position: absolute;
+    background-color: #e7332c;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.top_page_content .main_navbar ul.links_list li a:hover::after {
+    width: 100%;
+    transition: .2s;
+}
+
+.top_page_content .main_navbar ul.links_list li a:hover,
+.top_page_content .main_navbar ul.links_list li:not(:first-child) a:hover:before {
+    color: #e7332c;
+    transition: .2s;
+}
+
+.top_page_content .main_navbar ul.smLinks li {
+    color: #3f4040 !important;
+}
+
+.top_page_content .logo_section {
+    padding: 0 35px;
+}
+
+.top_page_content .logo_section .logoSection_left img {
+    width: 14rem;
+}
+
+.top_page_content .logo_section .logoSection_left h5 {
+    vertical-align: bottom;
+    font-family: 'AlegreyaSansSC-Light';
+    color: #404040;
+    font-weight: 700;
+}
+
+.top_page_content .logo_section .logoSection_left h5 span {
+    font-family: 'AlegreyaSansSC-Medium';
+}
+
+.top_page_content .logo_section .logoSection_right ul li.first {
+    position: relative;
+}
+
+.top_page_content .logo_section .logoSection_right ul li {
+    color: #3f4040;
+    font-family: 'AlegreyaSansSC-Regular';
+}
+
+.top_page_content .logo_section .logoSection_right ul li.first:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 27px;
+    background-color: #E9E9E9;
+    right: -23px;
+    top: 8px;
+}
+
+.top_page_content .logo_section .logoSection_right ul li img.cartIcon {
+    position: relative;
+}
+
+/*style the number of items*/
+.top_page_content .logo_section .logoSection_right ul li span.my_badge {
+    position: absolute;
+    top: 15px;
+    background-color: #e7332c;
+    right: -15px;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.top_page_content .logo_section img.img_behind {
+    position: absolute;
+    top: 7px;
+    width: 150px;
+    z-index: -1;
+}
+
+/*style the user profile dropdown*/
+.top_page_content .logo_section .logoSection_right ul li.first ul.dropdown-menu {
+    transform: translate(-43%, 32%) !important;
+    border: none;
+    border-radius: 0;
+    box-shadow: 3px 3px 5px 0px #ccc;
+    width: 265px;
+    padding: 20px;
+}
+
+.top_page_content .logo_section .logoSection_right ul li.first ul.dropdown-menu li a {
+    font-size: 14px;
+}
+
+.top_page_content .logo_section .logoSection_right ul li.first ul.dropdown-menu::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #fff;
+    left: 48%;
+    top: -10px;
+}
+
+.top_page_content .logo_section .logoSection_right ul li.first ul.dropdown-menu .register_btn {
+    width: 85%;
+    margin: auto;
+    padding: 4px 0;
+    background-color: #e7332c !important;
+}
+
+/*end the user profile dropdown*/
+
+/*start style the side nav*/
+.top_page_content .sidenav {
+    height: 100%;
+    width: 470px;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: -150%;
+    /* right: 0; */
+    background-color: #fff;
+    padding: 60px 35px 0 35px;
+    transition: right .2s;
+}
+
+.top_page_content .sidenav_overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -110%;
+    z-index: 10;
+    transition: left .4s;
+}
+
+.open_overlay {
+    left: 0 !important;
+}
+
+.open {
+    right: 0 !important;
+}
+
+.top_page_content .sidenav .user_purchases .user_cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+
+.top_page_content .sidenav .user_purchases .user_cart h3 {
+    font-family: 'AlegreyaSansSC-ExtraBold';
+    color: #e7332c !important;
+    font-size: 30px;
+}
+
+.top_page_content .sidenav .user_purchases .user_cart span.closebtn {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.top_page_content .sidenav .user_purchases .purchases_content {
+    border-bottom: 1px solid #000;
+    height: 360px;
+    padding: 35px 0;
+    overflow: auto;
+    width: 100%;
+}
+
+.top_page_content .sidenav .user_purchases .purchases_content .purchases_content_left {
+    height: 140px;
+    width: 140px;
+    background-image: url(../images/belt1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+}
+
+.top_page_content .sidenav .user_purchases .purchases_content .purchases_details {
+    margin-bottom: 20px;
+}
+
+.top_page_content .sidenav .user_purchases .purchases_content .purchases_details:last-child {
+    margin-bottom: 0;
+}
+
+.top_page_content .sidenav .user_purchases .purchases_content .purchases_content_right {
+    width: 90%;
+}
+
+.top_page_content .sidenav .user_purchases .purchases_content .purchases_content_right .top_content {
+    border-bottom: 1px solid #000;
+    padding-bottom: 35px;
+}
+
+.top_page_content .sidenav .user_purchases .purchases_content .purchases_content_right .top_content h6,
+.top_page_content .sidenav .user_purchases .purchases_content .purchases_content_right .top_content h5 {
+    color: #e7332c;
+}
+
+.top_page_content .sidenav .user_purchases .purchases_content .purchases_content_right .top_content p {
+    font-size: 13px;
+}
+
+.top_page_content .sidenav .user_purchases .purchases_content .purchases_content_right .bottom_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+    padding: 7px 0;
+}
+
+.top_page_content .sidenav .user_purchases .purchases_content .purchases_content_right .bottom_content .icon_section span {
+    font-size: 17px;
+    color: #cecece;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.top_page_content .sidenav .user_purchases .purchases_content .purchases_content_right .bottom_content .icon_section span:hover {
+    color: #E8332C;
+}
+
+.top_page_content .sidenav .user_purchases .subtotal h5 {
+    color: #7e7e7e !important;
+    font-family: 'AlegreyaSansSC-Light';
+    margin: 12px 0px;
+    font-weight: bold;
+}
+
+.top_page_content .sidenav .user_purchases .subtotal_content {
+    background-color: #e7332c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.top_page_content .sidenav .user_purchases .subtotal_content a {
+    background-color: #fff;
+    font-family: 'AlegreyaSansSC-Medium';
+    font-size: 14px;
+    padding: 5px 17px;
+    color: #696a6a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*end style the side nav*/
+
+/* here end top page content */
+
+/*=========================================*/
+
+/*start style the search section*/
+.home_main_content .search_section {
+    margin: 30px 0;
+}
+
+.home_main_content .search_section h3 {
+    color: #434444;
+    font-family: 'AlegreyaSansSC-Bold';
+    font-size: 23px;
+}
+
+.home_main_content .search_section label {
+    color: #3f4040;
+    font-family: 'AlegreyaSansSC-Bold';
+}
+
+.home_main_content .search_section .search_section_right input {
+    width: 65%;
+    color: #3f4040;
+    font-family: 'AlegreyaSansSC-Medium';
+    margin-left: 25px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 10px 15px;
+}
+
+.home_main_content .search_section .search_section_right input+span button {
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 4px 7px;
+    background-color: #e7332c !important;
+}
+
+.home_main_content .search_section .search_section_right input+span button i {
+    transform: rotate(-95deg);
+    color: #fff;
+    font-size: 35px;
+}
+
+/*end style the search section*/
+
+/*=========================================*/
+
+/*start style the our catalogs*/
+.home_main_content .our_catalogs {
+    height: 290px;
+    position: relative;
+}
+
+.home_main_content .our_catalogs::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+    left: 10%;
+    top: -19px;
+}
+
+.home_main_content .our_catalogs .row .col-md-4 {
+    padding: 25px;
+}
+
+.home_main_content .our_catalogs .catalog {
+    width: 94%;
+    position: relative;
+    height: 240px;
+    border: 1px solid #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* style the catalog active */
+.home_main_content .our_catalogs .catalog.active_catalog {
+    pointer-events: none;
+}
+
+.home_main_content .our_catalogs .catalog.active_catalog .catalog_content {
+    height: 100%;
+    background-color: rgba(232, 51, 44, .9);
+    top: 0;
+    align-items: end;
+}
+
+.home_main_content .our_catalogs .catalog.active_catalog .catalog_content h4 {
+    width: 70%;
+}
+
+/* end style the catalog active */
+
+.home_main_content .our_catalogs .catalog .catalog_content {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 7px 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .2s;
+}
+
+.home_main_content .our_catalogs .catalog .catalog_content h4 {
+    line-height: 1;
+    width: 75%;
+    font-family: 'AlegreyaSansSC-Bold';
+}
+
+.home_main_content .our_catalogs .catalog .catalog_content span {
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    line-height: 37px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.home_main_content .our_catalogs .catalog .catalog_content span i {
+    font-size: 35px;
+}
+
+.home_main_content .our_catalogs .catalog:hover .catalog_content {
+    background-color: rgba(232, 51, 44, .9);
+    padding: 25px 15px;
+}
+
+.PartCatalog .home_main_content .our_catalogs .catalog:hover .catalog_content {
+    background-color: rgba(232, 51, 44, .9);
+    padding: 12px 15px;
+}
+
+/*end style the our catalogs*/
+
+/*=========================================*/
+
+/*start style footer*/
+footer {
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+footer .our_policy {
+    background-color: #404040;
+    height: 290px;
+    position: relative;
+}
+
+footer .our_policy .policy {
+    width: 80%;
+    margin: 70px auto;
+    text-align: center;
+    position: relative;
+}
+
+footer .our_policy .policy img {
+    width: 35px;
+    margin-bottom: 20px;
+}
+
+footer .our_policy .policy h6 {
+    font-family: 'AlegreyaSansSC-Bold';
+}
+
+footer .our_policy .policy p {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'AlegreyaSansSC-Regular';
+    width: 80%;
+    margin: auto;
+}
+
+footer .our_policy .policy::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 75px;
+    background-color: #888;
+    right: -55px;
+    top: 27%;
+}
+
+footer .our_policy .payment_policy::after {
+    display: none
+}
+
+footer .our_policy img.red_img_behind {
+    position: absolute;
+    bottom: -26px;
+    left: 30%;
+    transform: rotate(-78deg);
+    z-index: -1;
+    width: 85px;
+}
+
+footer .our_policy img.star_img {
+    position: absolute;
+    top: -73px;
+    right: 4%;
+    width: 109px;
+}
+
+footer .copyright {
+    margin-top: 40px;
+}
+
+footer .copyright h5 {
+    color: #3f4040;
+    font-size: 18px;
+}
+
+footer .copyright h5 span:not(.made_by) {
+    color: #3f4040;
+}
+
+footer .copyright h6 {
+    color: #3f4040;
+    font-size: 16px;
+}
+
+footer .copyright i {
+    color: #e7332c;
+}
+
+footer .copyright a {
+    color: #3f4040 !important;
+    font-size: 17px;
+}
+
+/*end style footer*/
+
+img.absorberImg {
+    position: absolute;
+    right: 0px;
+    top: 210px;
+    width: 129px;
+}
+
+.home_main_content .heading {
+    margin: 30px 0;
+    padding-left: 23px;
+}
+
+.home_main_content .heading h5 {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #434444;
+    font-size: 24px;
+}
+
+/* start general style for the page that contain input fields */
+.form_accounts .personal_form,
+.form_accounts .login_form {
+    width: 65%;
+    padding: 40px 15px;
+}
+
+.form_accounts h3 {
+    margin-bottom: 30px;
+}
+
+.form_accounts input {
+    border: none;
+    border-radius: 0;
+    background-color: #E9E9E9;
+    box-shadow: none;
+}
+
+.form_accounts .bottom_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.form_accounts .bottom_content a {
+    color: #888;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* end general style for the page that contain input fields */
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'AlegreyaSansSC-Regular', 'icofont';
+    color: #434444;
+    font-size: 20px !important;
+    width: 100%;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+/* style the triangle inside the select */
+select+i {
+    pointer-events: none;
+    font-size: 32px;
+    position: absolute;
+    right: 20px;
+    top: 6px;
+}
+
+/* start style custom check */
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+label.form-check-label {
+    font-size: 23px;
+    margin-left: 45px;
+    text-transform: capitalize;
+    position: relative;
+    color: #434444;
+}
+
+label.form-check-label:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #434444;
+    background-color: transparent;
+    display: inline-block;
+    top: 2px;
+    left: -52px;
+}
+
+input[type='checkbox']:checked+label.form-check-label:after {
+    content: "\eed6";
+    position: absolute;
+    font-family: 'icofont';
+    font-size: 57px;
+    color: #E8332C;
+    top: -25px;
+    left: -59px;
+    font-weight: lighter;
+}
+
+/* end style custom check */
+
+/* style proced element */
+.proced {
+    padding-bottom: 85px;
+    border-bottom: 1px solid #ddd;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proced h5 {
+    margin-top: 28px;
+    transition: .2s;
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    border: 2px solid #fff;
+    font-size: 19px;
+    left: 10px;
+}
+
+.proced span {
+    font-size: 35px;
+    color: #b7b7b7;
+    position: absolute;
+    left: -30px;
+    transition: .2s;
+    top: -5px;
+}
+
+.proced h5:hover {
+    border: 2px solid #e7332c;
+}
+
+.proced h5:hover span {
+    font-size: 35px;
+    color: #e7332c;
+    position: absolute;
+    display: block;
+    left: 95%;
+    top: -5px;
+    transition: .2s;
+}
+
+/* end style proced element */
+
+/* ============================= */
+
+/* style my link */
+a.my_link {
+    padding: 6px 15px;
+    margin-top: 35px;
+    background-color: #e7332c;
+    outline: none;
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #e7332c;
+    transition: .2s;
+    display: inline-block;
+}
+
+a.my_link:hover {
+    background-color: transparent;
+    color: #434444;
+}
+
+/* end style my link */
+
+/* ============================= */
+
+/* style my btn */
+button.my_btn {
+    padding: 6px 15px;
+    font-family: 'AlegreyaSansSC-Bold';
+    background-color: #e7332c;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #e7332c;
+    transition: .2s;
+    display: inline-block;
+}
+
+button.my_btn:hover {
+    background-color: transparent;
+    color: #434444;
+}
+
+/* end style my btn */
+
+/* ============================= */
+
+/* style the tabs content */
+
+.card {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.card .nav-tabs {
+    border-bottom: none;
+}
+
+.card .nav-tabs>li>a {
+    display: block;
+    padding: 25px 0;
+    color: #3f4040;
+    font-weight: bold;
+}
+
+.chang_color {
+    color: #fff !important;
+}
+
+.card .tab-content {
+    margin-top: 70px;
+}
+
+.card .nav-tabs>li {
+    width: calc(100% / 3);
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: -1px;
+    font-family: 'AlegreyaSansSC-Bold';
+}
+
+.card .nav-tabs li.active {
+    background-color: #E8332C;
+}
+
+/* end style the tabs content */
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*============= END COMMON SECTIONS TO ALL PAGES ===============*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+/* ========================= START STYLE INDEX ============================== */
+
+.home .home_main_content .our_catalogs {
+    height: 179px;
+}
+
+.home .home_main_content .our_catalogs .catalog {
+    height: 130px;
+    background-position: bottom;
+}
+
+.home .home_main_content .catalog_search {
+    margin-top: 40px;
+}
+
+.home .home_main_content .catalog_search form {
+    position: relative;
+}
+
+.home .home_main_content .catalog_search form::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 3000px;
+    background-color: #fff;
+    top: 18px;
+    left: -61px;
+}
+
+.home .home_main_content .catalog_search form input {
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    border-radius: 0;
+    padding: 8px 15px;
+}
+
+/*hide the first and disabled options from the select*/
+.home .home_main_content .catalog_search form select option:disabled {
+    display: none;
+}
+
+.home .home_main_content .catalog_search form select option:nth-child(2) {
+    display: none !important;
+}
+
+.home .home_main_content .main_banner {
+    margin-top: 50px;
+}
+
+.home .home_main_content .main_banner .main_banner_left {
+    width: 90%;
+}
+
+.home .home_main_content .main_banner .main_banner_left .main_banner_img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 260px;
+}
+
+.home .home_main_content .main_banner .main_banner_left .main_left_desc {
+    background-color: #e7332c;
+    text-align: center;
+    padding: 25px;
+}
+
+.home .home_main_content .main_banner .main_banner_left .main_left_desc h2 {
+    font-family: 'AlegreyaSansSC-Regular';
+    color: #fff;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.home .home_main_content .main_banner .main_banner_left .main_left_desc h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.home .home_main_content .main_banner .main_banner_right {
+    background-color: #fff;
+    width: 95%;
+    margin-top: 80px;
+    margin-left: auto;
+}
+
+.home .home_main_content .main_banner .main_banner_right p:first-of-type {
+    color: #434444;
+    font-size: 43px;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.home .home_main_content .main_banner .main_banner_right p span {
+    text-transform: none;
+    color: #e7332c;
+}
+
+.home .home_main_content .main_banner .main_banner_right p:last-of-type {
+    color: #434444;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1.2;
+    margin-top: 40px;
+    font-family: 'arial regular';
+}
+
+.home .home_main_content .our_catalogs::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+    left: 10%;
+    bottom: -19px;
+    transform: rotate(180deg);
+}
+
+/* ========================= END STYLE INDEX ============================== */
+
+/* ========================= START STYLE ABOUT US ============================== */
+.about_us .home_main_content {
+    position: relative;
+}
+
+.about_us img.halfRing {
+    position: absolute;
+    top: 67%;
+    left: -3vw;
+    width: 70px;
+}
+
+.about_us .home_main_content .about_us_content {
+    height: auto;
+    margin-top: 75px;
+}
+
+.about_us .home_main_content .about_us_content .aboutUs_left {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+.about_us .home_main_content .about_us_content .aboutUs_left img.roundImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 394px;
+}
+
+.about_us .home_main_content .about_us_content .aboutUs_left img.smalRedImg {
+    position: absolute;
+    width: 80px;
+    right: 15%;
+    bottom: -5px;
+}
+
+.about_us .about_us_content .aboutUs_right {
+    width: 90%;
+}
+
+.about_us .about_us_content .aboutUs_right h4:first-of-type {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #e7332c !important;
+}
+
+.about_us .about_us_content .aboutUs_right h4:last-of-type {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #434444 !important;
+}
+
+.about_us .about_us_content .aboutUs_right p {
+    font-family: 'AlegreyaSansSC-Regular';
+    color: #434444 !important;
+}
+
+.about_us .about_us_content .aboutUs_right p span {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #e7332c !important;
+}
+
+.about_us .about_us_content .aboutUs_right p {
+    line-height: 1.4;
+    margin-bottom: 22px;
+}
+
+.about_us .about_us_content .aboutUs_right p:nth-child(3) {
+    font-size: 25px;
+    line-height: 1.4;
+}
+
+.about_us .about_us_content .aboutUs_right p:nth-child(4) {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.about_us .about_us_content .aboutUs_right p:nth-child(5) {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.about_us .about_us_content .aboutUs_right p:nth-child(6) {
+    font-size: 18px;
+    line-height: 1.4;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+.about_us .about_us_content .aboutUs_right ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.about_us .about_us_content .aboutUs_right ul li {
+    position: relative;
+    font-family: 'AlegreyaSansSC-Regular';
+    color: #434444;
+    font-size: 18px;
+}
+
+.about_us .about_us_content .aboutUs_right ul li::before {
+    content: " ";
+    position: absolute;
+    font-size: 35px;
+    left: -17px;
+    top: 33%;
+    width: 9px;
+    height: 9px;
+    background-color: #e7332c;
+    border-radius: 50%;
+}
+
+/* ========================= END STYLE ABOUT US ============================== */
+
+/* ========================= START STYLE CAREERS ============================== */
+
+.Careers .home_main_content .show_careers {
+    background-color: #fff;
+    padding: 35px;
+}
+
+.Careers .home_main_content .show_careers h5 {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #434444;
+    font-size: 23px;
+    line-height: 1;
+}
+
+.Careers .home_main_content .show_careers h5:last-of-type {
+    font-family: 'AlegreyaSansSC-Regular';
+}
+
+.Careers .home_main_content .show_careers strong {
+    display: inline-block;
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #e7332c !important;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+/* ========================= END STYLE CAREERS ============================== */
+
+/* ========================= START STYLE CONTACT US ============================== */
+.contact_us .home_main_content .contactUs {
+    margin: 90px 0;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_left {
+    padding-left: 15px;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_left h5 {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #e7332c;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_left .contact_details {
+    border-bottom: 1px solid #000;
+    width: 75%;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_left .contact_details h4 {
+    margin-bottom: 10px;
+    font-family: 'AlegreyaSansSC-Regular';
+    color: #272727;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_left .contact_info {
+    margin-top: 10px;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_left .contact_info h4:first-of-type {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #3f4040;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_left .contact_info a {
+    color: inherit;
+    font-weight: 400;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_left .send_us {
+    margin-top: 80px;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_left .send_us h4 {
+    font-family: 'AlegreyaSansSC-Regular';
+    color: #272727;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_left .send_us form .col {
+    padding-right: 0;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_left .send_us input,
+.contact_us .home_main_content .contactUs .contactUs_left .send_us textarea {
+    width: 95%;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    font-family: 'AlegreyaSansSC-Regular';
+    color: #434444;
+    font-size: 19px;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_left .send_us textarea {
+    padding: 10px;
+}
+
+.contact_us button.my_btn {
+    margin-top: 13px;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_right .big_ring {
+    width: 75%;
+    height: 458px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: -30px;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_right .big_ring .contact_map {
+    width: 365px;
+    height: 365px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    transform: translate(13%, 13%);
+}
+
+.contact_us .home_main_content .contactUs .contactUs_right .follow_us {
+    background-color: #e7332c;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    right: 16%;
+    bottom: 1%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #e7332c;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_right .follow_us ul li {
+    font-family: 'AlegreyaSansSC-Regular';
+}
+
+.contact_us .home_main_content .contactUs .contactUs_right .follow_us:hover {
+    background-color: transparent;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_right .follow_us:hover a,
+.contact_us .home_main_content .contactUs .contactUs_right .follow_us:hover li {
+    color: red !important;
+    transition: .2s;
+}
+
+.contact_us .home_main_content .contactUs .contactUs_right .follow_us a {
+    font-size: 25px;
+}
+
+/* ========================= END STYLE CONTACT US ============================== */
+
+/* ========================= START STYLE CREATE ACCOUNT ============================== */
+
+.Create_Account .home_main_content .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Create_Account .home_main_content .heading a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    margin-right: 25px;
+    font-size: 18px;
+}
+
+.Create_Account .home_main_content .heading i {
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: -6px;
+}
+
+/* ========================= END STYLE CREATE ACCOUNT ============================== */
+
+/* ========================= START STYLE LOG IN ============================== */
+
+.login .form_accounts .personal_form {
+    width: 90%;
+}
+
+.login .form_accounts .personal_form h3 {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #434444;
+    font-size: 23px;
+}
+
+.login .form_accounts .login_form {
+    width: 100%;
+}
+
+.login .form_accounts .login_form label {
+    font-family: 'AlegreyaSansSC-Regular';
+    color: #434444;
+    font-size: 17px;
+}
+
+.login .form_accounts .login_form h3 {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #434444;
+    font-size: 23px;
+}
+
+.login .form_accounts .login_form p {
+    font-family: 'AlegreyaSansSC-Regular';
+    color: #434444;
+    font-size: 19px;
+}
+
+.login .form_accounts .boRight {
+    height: 350px;
+}
+
+.login .form_accounts .personal_form P {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #434444;
+    text-transform: uppercase;
+    font-family: 'AlegreyaSansSC-Regular';
+}
+
+.login .form_accounts input {
+    width: 60%;
+}
+
+.login .form_accounts .bottom_content {
+    margin-top: 100px;
+}
+
+/* ========================= END STYLE LOG IN ============================== */
+
+/* ========================= START STYLE EDIT PROFILE ============================== */
+
+.edit_profile .edit_user_form {
+    padding: 25px 15px 15px 15px;
+    background-color: #fff;
+    margin-bottom: 150px;
+}
+
+.edit_profile .edit_user_form h4 {
+    margin-bottom: 20px;
+}
+
+.edit_profile .edit_user_form label {
+    font-family: 'AlegreyaSansSC-Medium';
+    color: #949595;
+    font-size: 18px;
+}
+
+.edit_profile .edit_user_form input {
+    color: #949595;
+}
+
+.edit_profile .edit_user_form .left_inputs,
+.edit_profile .edit_user_form .middle_inputs,
+.edit_profile .edit_user_form .right_inputs {
+    width: 85%;
+}
+
+.edit_profile .edit_user_form .middle_inputs {
+    margin: auto;
+}
+
+.edit_profile .edit_user_form .right_inputs {
+    margin-left: auto;
+}
+
+.edit_profile .edit_user_form input,
+.edit_profile .edit_user_form select {
+    background-color: #E9E9E9;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    font-family: 'AlegreyaSansSC-Medium';
+    color: #949595;
+}
+
+.edit_profile .edit_user_form select+i {
+    top: 90px;
+    right: 4vw;
+}
+
+/* start style custom check */
+.edit_profile .edit_user_form form {
+    position: relative;
+}
+
+#edit .form-check {
+    position: absolute;
+    bottom: -80px;
+}
+
+#edit .form-check label {
+    font-family: 'AlegreyaSansSC-bold' !important;
+    color: #3f4040 !important;
+    font-size: 24px;
+}
+
+/* start style the address tab section */
+#address {
+    background-color: #fff;
+    margin-bottom: 160px;
+}
+
+#address .row .col-md-6 {
+    padding: 25px 40px 15px 40px;
+}
+
+#address .row .col-md-6:first-child {
+    border-right: 2px solid #dee2e6;
+}
+
+#address .tab-content {
+    padding: 0;
+}
+
+#address .customer_details {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+#address .customer_details h5,
+#address .customer_details a {
+    color: #949595;
+    margin-bottom: 2px;
+}
+
+#address .bottom_section {
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#address .bottom_section span {
+    font-size: 20px;
+    color: #949595;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#address .bottom_section span:hover {
+    color: #E8332C;
+}
+
+#address label.form-check-label {
+    margin-left: 30px;
+}
+
+#address label.form-check-label:before {
+    background-color: #E9E9E9;
+}
+
+#address button.my_btn {
+    position: absolute;
+    bottom: -75px;
+}
+
+/* end style the address tab section */
+
+/* start style the orders tab section */
+#orders {
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    color: #3f4040;
+}
+
+#orders .no_orders_right span {
+    font-size: 36px;
+    color: #b7b7b7;
+    vertical-align: sub;
+    margin-right: -12px;
+}
+
+#orders .no_orders {
+    margin-top: 30px;
+}
+
+.edit_profile footer {
+    margin-top: 0;
+}
+
+/* end style the orders tab section */
+
+/* ========================= END STYLE EDIT PROFILE ============================== */
+
+/* ========================= START STYLE CHECKOUT ============================== */
+
+/* style the checkout table */
+.checkout #my_cart {
+    background-color: #E9E9E9;
+    margin-bottom: 75px;
+}
+
+.checkout #my_cart .mycart_content {
+    margin-bottom: 150px;
+}
+
+.checkout #my_cart .checkout_table {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    border-top: 1px solid;
+    background-color: transparent;
+}
+
+.checkout #my_cart .checkout_table tbody tr {
+    background-color: #fff;
+}
+
+.checkout #my_cart .checkout_table td {
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.checkout #my_cart .checkout_table th,
+.checkout #my_cart .checkout_table h4,
+.checkout #my_cart .checkout_table p {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #3f4040;
+}
+
+.checkout #my_cart .checkout_table th,
+.checkout #my_cart .checkout_table td {
+    border-bottom: none !important;
+    border-top: none !important;
+    font-size: 18px;
+}
+
+.checkout #my_cart .checkout_table td {
+    padding: 20px 30px;
+}
+
+/* ======================================== */
+
+.checkout #my_cart .checkout_table .Product-img {
+    border: 1px solid #ddd;
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.checkout #my_cart .checkout_table .bottom_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout #my_cart .checkout_table .bottom_section span {
+    color: #c5c1c1;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.checkout #my_cart .checkout_table .bottom_section span:hover {
+    color: #E8332C;
+}
+
+.checkout #my_cart .checkout_table h4.product_name {
+    color: #e7332c;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.checkout #my_cart .checkout_table span.product_price {
+    color: #e7332c;
+    font-size: 22px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+
+.checkout #my_cart .checkout_table h2.toatal_price {
+    color: #e7332c;
+    font-size: 22px;
+}
+
+/* ================================== */
+
+/* style the Increment and Decrement btn */
+.checkout #my_cart .checkout_table .inline-group {
+    max-width: 9rem;
+    padding: .5rem;
+}
+
+.checkout #my_cart .checkout_table .btn-outline-secondary {
+    border-radius: 0;
+    background-color: #ddd;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.checkout #my_cart .checkout_table .btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #E8332C;
+    border-color: #E8332C;
+}
+
+.checkout #my_cart .checkout_table .input-group {
+    width: 100%;
+    margin: auto;
+}
+
+.checkout #my_cart .checkout_table .inline-group .form-control {
+    text-align: center;
+    font-weight: bold;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.checkout #my_cart .checkout_table .inline-group .form-control:focus {
+    border-color: #ced4da;
+}
+
+.checkout #my_cart .checkout_table .input-group>.form-control:not(:first-child),
+.checkout #my_cart .checkout_table.input-group>.custom-select:not(:first-child) {
+    padding: 0;
+}
+
+.checkout #my_cart .checkout_table .form-control[type="number"]::-webkit-inner-spin-button,
+.checkout #my_cart .checkout_table .form-control[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* end style the Increment and Decrement btn */
+
+.checkout .mycart_right {
+    border-top: 10px solid #e7332c;
+    background-color: #fff;
+    width: 95%;
+    height: 100%;
+    margin-left: auto;
+}
+
+.checkout .mycart_right .mycart_right_heading {
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
+.checkout .mycart_right .mycart_right_heading h6 {
+    font-size: 20px;
+}
+
+.checkout .mycart_right .mycart_right_heading h2 {
+    font-size: 40px;
+    color: #e7332c;
+}
+
+.checkout .mycart_right .paypal {
+    margin: 50px;
+}
+
+.checkout .mycart_right .paypal img {
+    width: 60px;
+}
+
+/* end style the checkout table */
+
+/* style payment */
+
+.form-check {
+    position: absolute;
+}
+
+.checkout #payment .form-check {
+    bottom: -70px;
+}
+
+.checkout #payment .chkout_form {
+    border-top: 1px solid #000;
+}
+
+.checkout #payment .chkout_form form {
+    padding: 25px 15px 15px 15px;
+    position: relative;
+}
+
+.checkout #payment .chkout_form h3 {
+    padding: 20px 0 20px 30px;
+}
+
+.checkout label {
+    font-family: 'AlegreyaSansSC-Medium';
+    color: #949595;
+}
+
+.checkout #payment .form-check label {
+    font-family: 'AlegreyaSansSC-bold' !important;
+    color: #3f4040 !important;
+}
+
+.checkout #payment .chkout_form input,
+.checkout #payment .chkout_form textarea {
+    color: #949595;
+    width: 85%;
+}
+
+.checkout #payment .chkout_form input,
+.checkout #payment .chkout_form textarea {
+    background-color: #E9E9E9;
+    border: none;
+    font-weight: bold;
+    border-radius: 0;
+    outline: 0;
+}
+
+/* ==================== */
+.checkout .chkout_right {
+    border-top: 10px solid #e7332c;
+    background-color: #fff;
+    width: 95%;
+    height: 100%;
+    margin-left: auto;
+}
+
+.checkout .chkout_right .chkout_right_heading {
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 5px 10px;
+}
+
+.checkout .chkout_right .chkout_right_heading h6 {
+    font-size: 35px;
+}
+
+.checkout .chkout_right .chkout_right_heading h2 {
+    font-size: 55px;
+    color: #e7332c;
+}
+
+.checkout .chkout_right .chkout_right_form h3 {
+    margin-bottom: 25px;
+}
+
+.checkout .chkout_right .chkout_right_form form {
+    width: 70%;
+    margin: 11px 0 0 30px;
+}
+
+.checkout .chkout_right .chkout_right_form input {
+    border: none;
+    border-radius: 0;
+    background-color: #E9E9E9;
+}
+
+.checkout .chkout_right .chkout_right_form .chkout_right_botm {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    width: 85%;
+    margin-left: 30px;
+}
+
+.checkout .chkout_right .chkout_right_form .chkout_right_botm .dsflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout .chkout_right .chkout_right_form .chkout_right_botm .dsflex:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.checkout .chkout_right .chkout_right_form .chkout_right_botm .dsflex span {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.checkout .chkout_right .paypal {
+    margin: 50px;
+}
+
+.checkout .chkout_right .paypal img {
+    width: 60px;
+}
+
+/* end style payment */
+.checkout footer {
+    margin-top: 0;
+}
+
+/* ========================= END STYLE CHECKOUT ============================== */
+
+/* ========================= START STYLE PART NUMBER SEARCH ================== */
+
+.partNumber_search .home_main_content .our_catalogs {
+    height: 179px;
+}
+
+.partNumber_search .home_main_content .our_catalogs .catalog {
+    height: 130px;
+    background-position: bottom;
+}
+
+.partNumber_search .home_main_content .part_number {
+    margin-top: 40px;
+}
+
+.partNumber_search .home_main_content .part_number form {
+    position: relative;
+}
+
+.partNumber_search .home_main_content .part_number form::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 3000px;
+    background-color: #fff;
+    top: 18px;
+    left: -61px;
+}
+
+.partNumber_search .home_main_content form input {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 8px 15px;
+}
+
+.partNumber_search .home_main_content form .bottomSearch {
+    margin-top: 160px;
+}
+
+/*hide the first and disabled options from the select*/
+.partNumber_search .home_main_content form select option:disabled {
+    display: none;
+}
+
+.partNumber_search .home_main_content form select option:nth-child(2) {
+    display: none !important;
+}
+
+.partNumber_search .home_main_content .part_number form button {
+    background-color: #e7332c;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
+    cursor: pointer;
+    border: 2px solid #e7332c;
+    transition: .2s;
+    width: 80%;
+    margin: auto;
+    padding: 2px 0;
+    display: block;
+}
+
+.partNumber_search .home_main_content .part_number form button:hover {
+    background-color: #E9E9E9;
+    color: #222;
+}
+
+/* ========================= END STYLE PART NUMBER SEARCH ================== */
+
+/* ========================= START STYLE PART CATALOG ================== */
+
+.PartCatalog .home_main_content .our_catalogs {
+    height: 179px;
+}
+
+.PartCatalog .home_main_content .our_catalogs .catalog {
+    height: 130px;
+    background-position: bottom;
+}
+
+.PartCatalog .home_main_content .catalog_search {
+    margin-top: 40px;
+}
+
+.PartCatalog .home_main_content .catalog_search form {
+    position: relative;
+}
+
+.PartCatalog .home_main_content .catalog_search form::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 3000px;
+    background-color: #fff;
+    top: 18px;
+    left: -61px;
+}
+
+.PartCatalog .home_main_content .catalog_search form input {
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    border-radius: 0;
+    padding: 8px 15px;
+}
+
+.PartCatalog .home_main_content .catalog_search form select option {
+    margin: 20px;
+}
+
+/*hide the first and disabled options from the select*/
+.PartCatalog .home_main_content .catalog_search form select option:disabled {
+    display: none;
+}
+
+.PartCatalog .home_main_content .catalog_search form select option:nth-child(2) {
+    display: none !important;
+}
+
+/* ========================= END STYLE PART CATALOG =================== */
+
+/* ========================= START STYLE ORDER AND STATUS =================== */
+
+.order .return_steps {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.order .return_steps .return_steps_content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.order .return_steps .return_steps_content .return {
+    text-align: center;
+    width: 25%;
+}
+
+.order .return_steps .return_steps_content .return p {
+    width: 72%;
+    margin: auto;
+    line-height: 1;
+}
+
+.order .return_steps .return_steps_content .return img {
+    width: 85px;
+}
+
+.order .return_steps .return_steps_content .return .bullet span {
+    height: 38px;
+    width: 38px;
+    background-color: #e7332c;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    margin: 20px auto;
+    animation-duration: 1s;
+}
+
+@keyframes pulse {
+
+    0% {
+
+        transform: scale(1)
+    }
+
+    to {
+
+        transform: scale(1.3)
+    }
+
+}
+
+.order .return_steps .return_steps_content .return:nth-child(2) .bullet span {
+    animation-delay: .5s;
+}
+
+.order .return_steps .return_steps_content .return:nth-child(3) .bullet span {
+    animation-delay: .8s;
+}
+
+/* ==================================================== */
+
+.order .return_steps .return_steps_content .return .bullet span::before {
+    position: absolute;
+    content: '';
+    bottom: 11px;
+    height: 2px;
+    width: 23vw;
+    background-color: #ddd;
+    top: 50%;
+    left: 38px;
+}
+
+.order .return_steps .return_steps_content .return .bullet span::after {
+    position: absolute;
+    content: '';
+    bottom: 11px;
+    height: 2px;
+    width: 0;
+    background-color: #e7332c;
+    top: 50%;
+    left: 38px;
+    animation-name: fill_lign_width;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+/* hide the before from last element */
+.order .return_steps .return_steps_content .return:nth-child(4) .bullet span::before {
+    display: none;
+}
+
+.order .return_steps .return_steps_content .return:nth-child(4) .bullet span::after {
+    display: none;
+}
+
+.order .return_steps .return_steps_content .return:nth-child(1) .bullet span::after {
+    animation-delay: .4s;
+}
+
+.order .return_steps .return_steps_content .return:nth-child(2) .bullet span::after {
+    animation-delay: 1.4s;
+}
+
+.order .return_steps .return_steps_content .return:nth-child(3) .bullet span::after {
+    animation-delay: 2.4s;
+}
+
+@keyframes fill_lign_width {
+
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 23vw;
+    }
+
+}
+
+.order .home_main_content .below_info {
+    margin-top: 50px;
+}
+
+.order .home_main_content .below_info .get_started {
+    margin-left: 30px;
+}
+
+.order .home_main_content .below_info .look_up {
+    width: 80%;
+    margin-left: auto;
+}
+
+.order .home_main_content .below_info .row .col-md-6:first-child {
+    position: relative;
+}
+
+.order .home_main_content .below_info .row .col-md-6:first-child::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 230px;
+    background-color: #ddd;
+    right: 0;
+    top: calc((100% - 230px)/2);
+}
+
+.order .home_main_content .below_info form {
+    width: 55%;
+}
+
+.order .home_main_content .below_info .look_up form {
+    width: 76%;
+}
+
+.order .home_main_content .below_info form input {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 7px 15px;
+    font-family: 'AlegreyaSansSC-Medium';
+}
+
+.order .home_main_content .below_info form input[type='number'] {
+    width: 55%;
+}
+
+.order .home_main_content .below_info .below_info_bottom {
+    width: 54%;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+/* ========================= END STYLE ORDER AND STATUS =================== */
+
+/* ========================= START STYLE PART CATALOG C =================== */
+
+.part_catalog_title {
+    padding: 15px 0;
+    position: relative;
+}
+
+.part_catalog_title::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+    left: 6rem;
+    top: -19px;
+}
+
+.part_catalog_title .part_info ul {
+    list-style: none;
+    margin-bottom: 0;
+    font-family: 'AlegreyaSansSC-Bold';
+}
+
+.part_catalog_title .part_info ul li {
+    display: inline-block;
+}
+
+.part_catalog_title .part_info ul li a {
+    font-size: 20px;
+    color: #3f4040;
+}
+
+.part_catalog_title .part_info ul li a.active_list {
+    color: #e7332c;
+}
+
+.part_catalog_title .part_info ul li i {
+    vertical-align: middle;
+}
+
+.part_catalog_title .part_info_back h5 a {
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #3f4040;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.part_catalog_title .part_info_back h5 i {
+    font-size: 30px;
+    color: #3f4040;
+    vertical-align: middle;
+    margin-right: -6px;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details {
+    margin-top: 50px;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .product_details .heading_details {
+    border-bottom: 1px solid #ddd;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .product_details .heading_details h3 {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #e7332c;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .product_details .heading_details p {
+    font-family: 'AlegreyaSansSC-Regular';
+    color: #3f4040;
+    font-size: 25px;
+}
+
+/* start style the carosel slider */
+.partCatalogC .home_main_content .product_caatalog_details .product_details .sliderOfProduct {
+    height: 460px;
+    width: 80%;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .product_details .sliderOfProduct #my_carousel,
+.partCatalogC .home_main_content .product_caatalog_details .product_details .sliderOfProduct #my_carousel .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .product_details .sliderOfProduct #my_carousel .carousel-item {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    width: 100%;
+    height: 100%;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .product_details .sliderOfProduct #my_carousel .carousel-control-prev-icon,
+.partCatalogC .home_main_content .product_caatalog_details .product_details .sliderOfProduct #my_carousel .carousel-control-next-icon {
+    width: 30px !important;
+    height: 50px !important;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .product_details .sliderOfProduct #my_carousel .carousel-control-next-icon {
+    background-image: url(../images/right_arrow.png);
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .product_details .sliderOfProduct #my_carousel .carousel-control-next {
+    right: -65px;
+}
+
+/* end style the carosel slider */
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details {
+    width: 95%;
+    margin-left: auto;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details h3 {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #3f4040;
+    margin-top: 25px;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details p {
+    font-family: 'AlegreyaSansSC-Regular';
+    color: #3f4040;
+    font-size: 20px;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_benefit ul.benefits {
+    list-style: none;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_benefit ul.benefits li {
+    font-family: 'AlegreyaSansSC-Regular';
+    color: #3f4040;
+    font-size: 20px;
+    position: relative;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_benefit ul.benefits li::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #e7332c;
+    border-radius: 50%;
+    top: 10px;
+    left: -18px;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 95%;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom h2 {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #e7332c;
+    font-size: 55px;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom .more_details_addTocart {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 57%;
+}
+
+.partCatalogC button.my_btn {
+    padding: 3px 20px;
+    font-family: 'AlegreyaSansSC-Medium';
+}
+
+/* ================================== */
+
+/* style the Increment and Decrement btn */
+.checkout #my_cart .checkout_table .inline-group {
+    max-width: 7rem;
+    padding: .5rem;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom .btn-outline-secondary {
+    border-radius: 0;
+    background-color: #ddd;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 5px 14px;
+    font-size: 12px;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom .btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #E8332C;
+    border-color: #E8332C;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom .input-group {
+    width: 7.5rem;
+    margin-right: 2px;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom .inline-group .form-control {
+    text-align: center;
+    font-weight: bold;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom .inline-group .form-control:focus {
+    border-color: #ced4da;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom:not(:first-child),
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom:not(:first-child) {
+    padding: 0;
+}
+
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom .form-control[type="number"]::-webkit-inner-spin-button,
+.partCatalogC .home_main_content .product_caatalog_details .more_details .more_details_bottom .form-control[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* end style the Increment and Decrement btn */
+
+.partCatalogC .home_main_content .wich_right_product {
+    margin-top: 50px;
+}
+
+.partCatalogC .home_main_content h3,
+.partCatalogC .home_main_content h5 {
+    font-family: 'AlegreyaSansSC-Bold';
+    color: #3f4040;
+}
+
+.partCatalogC .home_main_content table {
+    font-family: 'AlegreyaSansSC-Medium';
+    color: #3f4040;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.partCatalogC .home_main_content table thead {
+    background-color: #fff;
+}
+
+.partCatalogC .home_main_content table thead th {
+    border-bottom: none;
+    border-top: none;
+}
+
+.partCatalogC .home_main_content table th,
+.partCatalogC .home_main_content table td {
+    border-top: none;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+    font-family: 'AlegreyaSansSC-Regular';
+}
+
+.partCatalogC .home_main_content table.specifications_table {
+    width: 80%;
+}
+
+.partCatalogC .home_main_content table.specifications_table td {
+    text-align: left;
+    padding: 5px 0 5px 18px;
+}
+
+.partCatalogC .home_main_content .elem_specifications {
+    margin-top: 50px;
+}
+
+.partCatalogC .home_main_content .elem_specifications .right_specif {
+    width: 85%;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.partCatalogC .home_main_content .elem_specifications .right_specif ul {
+    list-style: none;
+    font-family: 'AlegreyaSansSC-Medium';
+    color: #3f4040;
+    background-color: #fff;
+    display: inline-block;
+    height: 170px;
+    overflow: auto;
+    padding: 10px 40px 10px 15px;
+}
+
+.partCatalogC .home_main_content .elem_specifications .right_specif ul li {
+    font-size: 24px;
+}
+
+.partCatalogC .home_main_content .service_tip {
+    margin-top: 31px;
+    border-top: 3px solid #ddd;
+    border-bottom: 3px solid #ddd;
+    padding: 27px;
+}
+
+.partCatalogC .home_main_content .service_tip span {
+    padding: 12px 20px;
+    font-family: 'AlegreyaSansSC-Bold';
+    background-color: #e7332c;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    width: 18%;
+    vertical-align: middle;
+}
+
+.partCatalogC .home_main_content .service_tip .service_tip_text {
+    display: inline-block;
+    width: 80%;
+    font-family: 'AlegreyaSansSC-Medium';
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.partCatalogC .home_main_content .service_tip .service_tip_text p {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.partCatalogC .home_main_content .warranty {
+    font-family: 'AlegreyaSansSC-Medium';
+    margin-top: 35px;
+    padding-left: 30px;
+}
+
+.partCatalogC .home_main_content .warranty h5,
+.partCatalogC .home_main_content .warranty span {
+    color: #e7332c;
+}
+
+.partCatalogC footer {
+    margin-top: 30px;
+}
+
+/* ========================= END STYLE PART CATALOG C =================== */
+
+/* ========================= START STYLE PART CATALOG B =================== */
+
+.partCatalogB .our_accessories {
+    margin-top: 60px;
+}
+
+.partCatalogB .our_accessories h5 {
+    font-family: 'AlegreyaSansSC-Regular';
+    color: #3f4040;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.partCatalogB ul.accessories_list {
+    list-style: none;
+    margin-bottom: 0;
+    font-family: 'AlegreyaSansSC-Regular';
+    color: #3f4040;
+    border-top: 1px solid #000;
+    width: 17rem;
+}
+
+.partCatalogB ul.accessories_list li {
+    font-size: 19px;
+    line-height: 1;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.partCatalogB ul.accessories_list li a.dropdown-toggle {
+    width: 100%;
+    padding: 5px 3px 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transition: .2s;
+}
+
+/* hide the default arrow */
+.partCatalogB ul.accessories_list li a.dropdown-toggle::after {
+    display: none;
+}
+
+.partCatalogB ul.accessories_list li a.dropdown-toggle:hover {
+    background-color: #e7332c;
+    color: #fff;
+}
+
+.partCatalogB ul.accessories_list li a.dropdown-toggle i {
+    font-size: 25px;
+    color: #fff;
+    transform: translateX(-15px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+}
+
+.partCatalogB ul.accessories_list li a.dropdown-toggle:hover i {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.show_arrow {
+    transform: translateX(0) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.stay_background {
+    background-color: #e7332c !important;
+    color: #fff !important;
+}
+
+.partCatalogB ul.accessories_list li .dropdown-menu {
+    left: 100% !important;
+    top: 0 !important;
+    transform: none !important;
+    border-radius: 0;
+    border: none;
+    margin: -1px 0 0 1px;
+    padding: 2px 20px;
+    width: 16rem;
+}
+
+.partCatalogB ul.accessories_list li .dropdown-menu a {
+    border-bottom: 1px solid #ddd;
+    font-size: 17px;
+    transition: all .2s;
+    padding: 7px 0;
+    font-family: 'AlegreyaSansSC-Bold';
+}
+
+.partCatalogB ul.accessories_list li .dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.partCatalogB ul.accessories_list li .dropdown-menu a.active_accessories {
+    color: #e7332c;
+}
+
+.partCatalogB ul.accessories_list li .dropdown-menu a:hover {
+    background-color: #e7332c;
+    color: #fff;
+}
+
+/* style our main products */
+.partCatalogB .our_main_products {
+    background-color: #fff;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.partCatalogB .our_main_products .ourMain_title {
+    border-bottom: 1px solid #ddd;
+}
+
+.partCatalogB .ourMain_title ul {
+    list-style: none;
+    margin-bottom: 0;
+    font-family: 'AlegreyaSansSC-Regular';
+}
+
+.partCatalogB .ourMain_title ul li {
+    display: inline-block;
+}
+
+.partCatalogB .ourMain_title ul li a {
+    color: #3f4040;
+    font-size: 22px;
+}
+
+.partCatalogB .ourMain_title ul li a.chosen_product {
+    font-family: 'AlegreyaSansSC-Bold';
+}
+
+.partCatalogB .our_single_product {
+    width: 18rem;
+    margin: 25px auto 0;
+}
+
+.partCatalogB .our_single_product_img {
+    background-image: url(../images/single_product_img.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: relative;
+}
+
+.partCatalogB .our_single_product_img a.add_this_item {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    background-color: #3f4040;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    transition: .2s;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.partCatalogB .our_single_product_img a.add_this_item:hover {
+    background-color: #e7332c;
+}
+
+.partCatalogB .our_single_product_details {
+    margin-top: 17px;
+    padding-left: 12px;
+}
+
+.partCatalogB .our_single_product_details h6 {
+    font-size: 20px;
+    color: #e7332c;
+    margin-bottom: 0;
+}
+
+.partCatalogB .our_single_product_details p {
+    font-family: 'AlegreyaSansSC-Regular';
+    font-size: 18px;
+    color: #3f4040;
+}
+
+/* ================================== */
+/* style the Increment and Decrement btn */
+
+.partCatalogB .more_details_bottom {
+    padding-left: 12px;
+    margin-top: -10px;
+}
+
+.partCatalogB .more_details_bottom h2 {
+    color: #e7332c;
+    font-weight: bold;
+    font-family: 'arial';
+}
+
+.partCatalogB .more_details_bottom .btn-outline-secondary {
+    border-radius: 0;
+    background-color: #ddd;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 10px;
+    font-size: 10px;
+}
+
+.partCatalogB .more_details_bottom .btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #E8332C;
+    border-color: #E8332C;
+}
+
+.partCatalogB .more_details_bottom .input-group {
+    width: 5.7rem;
+    margin-right: 2px;
+}
+
+.partCatalogB .more_details_bottom .inline-group .form-control {
+    text-align: center;
+    font-weight: bold;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 2px;
+}
+
+.partCatalogB .more_details_bottom .inline-group .form-control:focus {
+    border-color: #ced4da;
+}
+
+.partCatalogB .more_details_bottom .form-control[type="number"]::-webkit-inner-spin-button,
+.partCatalogB .more_details_bottom .form-control[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.partCatalogB .more_details_bottom .more_details_addTocart {
+    display: flex;
+    margin-top: 5px;
+}
+
+.partCatalogB button.my_btn {
+    padding: 3px 11px;
+    font-size: 15px;
+    font-family: 'AlegreyaSansSC-Medium';
+    line-height: calc((100% - 4px)/2);
+}
+
+/* end style the Increment and Decrement btn */
+
+.partCatalogB .our_main_products .gotop {
+    position: absolute;
+    left: -35px;
+    background-color: #e7332c;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    font-size: 24px;
+    bottom: 100px;
+    cursor: pointer;
+}
+
+/* end our main products */
+
+/* ========================= END STYLE PART CATALOG B =================== */
+
+/* ======================================== END ALL ======================================== */
